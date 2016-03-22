@@ -56,43 +56,32 @@ a {
     margin-right: 10px; }
 
 nav {
-  padding: 25px 0 0 0;
-  text-align: left; }
+  position: absolute;
+  top: 57px;
+  text-align: left;
+  width: 1170px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: right; }
   nav a {
     display: inline-block;
     font-size: 15px;
     white-space: nowrap;
     color: #024D7D;
-    padding: 5px 20px 10px 0;
-    margin-right: 25px;
+    padding: 20px 25px;
     transition: all 0.3s ease 0s; }
     nav a:hover {
       color: #6EC9EF; }
 
 .submenu {
+  display: none;
   position: absolute;
-  left: 0;
   width: 100%;
   background-color: #D1E2ED; }
 
-.submenu_item {
-  position: relative;
-  margin-right: 30px; }
-  .submenu_item:after {
-    position: absolute;
-    content: "";
-    width: 15px;
-    height: 10px;
-    background-image: url(img/item_arrow.png);
-    display: block;
-    top: 11px;
-    right: 0; }
-
-.test:hover ~ .test1 {
+.submenu_item:hover > .submenu {
   display: block; }
-
-.test1 {
-  display: none; }
 
 .navtree {
   font-size: 14px;
@@ -150,13 +139,13 @@ nav {
     width: 315px; }
 
   nav {
-    text-align: right; }
+    width: 970px; }
     nav a {
-      margin-right: 0; }
-
-  .submenu_item {
-    margin-right: 20px; } }
+      padding: 15px 12px; } }
 @media (max-width: 992px) {
+  .head {
+    padding-bottom: 50px; }
+
   .logo {
     width: 332px; }
 
@@ -164,14 +153,21 @@ nav {
     display: none; }
 
   nav {
-    text-align: center; }
+    text-align: center;
+    width: 100%;
+    top: 157px; }
     nav a {
-      margin-left: 0;
-      padding: 5px 20px 10px 15px; }
+      padding: 15px 12px; }
+
+  .navtree {
+    display: none; }
 
   .foot_block {
     text-align: center; } }
 @media (max-width: 768px) {
+  .head {
+    padding-bottom: 0; }
+
   .logo {
     width: 100%; }
 
@@ -181,11 +177,10 @@ nav {
   .contacts_up {
     display: none; }
 
-  nav a {
-    display: block; }
-
-  .submenu_item {
-    margin-right: 0; }
+  nav {
+    display: none; }
+    nav a {
+      display: block; }
 
   .navtree {
     display: none; } }
