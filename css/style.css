@@ -4,14 +4,15 @@ body {
   font-family: Verdana, Geneva, sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  border-style: none; }
   a:hover {
     text-decoration: none;
     color: #6EC9EF; }
 
 .head {
   border-bottom: 1px #c0ddf0 solid;
-  padding-bottom: 15px; }
+  padding-bottom: 25px; }
 
 .head_line {
   position: absolute;
@@ -35,7 +36,7 @@ a {
   color: #fff; }
   .contacts_up a {
     color: #fff;
-    transition: all 0.3s ease 0s; }
+    transition: color 0.3s ease 0s; }
     .contacts_up a:hover {
       color: #FFFFBF; }
 
@@ -63,40 +64,89 @@ nav {
   left: 0;
   right: 0;
   margin: auto;
-  text-align: right; }
+  text-align: right;
+  z-index: 99; }
   nav a {
     display: inline-block;
     font-size: 15px;
     white-space: nowrap;
     color: #024D7D;
     padding: 20px 25px;
-    transition: all 0.3s ease 0s; }
+    transition: color 0.3s ease 0s; }
     nav a:hover {
       color: #6EC9EF; }
 
 .submenu {
-  display: none;
+  display: block;
   position: absolute;
   width: 100%;
-  background-color: #D1E2ED; }
+  background-color: #D1E2ED;
+  text-align: left;
+  max-height: 0;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden; }
+  .submenu a {
+    display: block;
+    white-space: pre-wrap;
+    padding: 5px 0;
+    margin: 5px 0; }
+    .submenu a:hover {
+      color: #2c9bc9; }
+  .submenu .container {
+    padding: 20px 50px; }
 
 .submenu_item:hover > .submenu {
-  display: block; }
+  max-height: 600px;
+  transition: max-height 0.25s ease-in; }
+
+.sub_item_ar {
+  background: url(img/item_arrow.png) no-repeat;
+  background-position: right; }
 
 .navtree {
   font-size: 14px;
   border-bottom: 1px #c0ddf0 solid;
-  padding: 8px 0; }
+  color: #999999; }
   .navtree a {
     display: inline-block;
-    padding: 3px 0; }
-  .navtree span {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    background: url(img/navtree_arrow.png) no-repeat;
-    background-position: top 1px right;
-    margin: 0 5px; }
+    padding: 10px 10px;
+    transition: all 0.3s ease 0s; }
+    .navtree a:hover {
+      color: #fff;
+      background-color: #0078C3; }
+
+.treeitem {
+  position: relative;
+  display: inline-block; }
+  .treeitem:hover {
+    background-color: #0078C3; }
+    .treeitem:hover a {
+      color: #fff; }
+  .treeitem:hover > .subtree {
+    display: block; }
+
+.tree_act {
+  padding: 10px 10px; }
+
+.subtree {
+  display: none;
+  position: absolute;
+  background-color: #0078C3;
+  width: 100%; }
+  .subtree a {
+    display: block;
+    color: #fff;
+    width: 100%; }
+    .subtree a:hover {
+      background-color: #0086D9; }
+
+.treearrow {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(img/navtree_arrow.png) no-repeat;
+  background-position: top 1px right;
+  margin: 0; }
 
 .footer {
   background-color: #004B78;
@@ -116,7 +166,7 @@ nav {
   color: #fff; }
   .contacts_foot a {
     color: #fff;
-    transition: all 0.3s ease 0s; }
+    transition: color 0.3s ease 0s; }
     .contacts_foot a:hover {
       color: #FFFFBF; }
 
@@ -126,7 +176,7 @@ nav {
     color: #9BBCCF;
     display: block;
     margin-bottom: 5px;
-    transition: all 0.3s ease 0s; }
+    transition: color 0.3s ease 0s; }
     .foot_block a:hover {
       color: #fff; }
 
@@ -141,7 +191,7 @@ nav {
   nav {
     width: 970px; }
     nav a {
-      padding: 15px 12px; } }
+      padding: 15px 14px; } }
 @media (max-width: 992px) {
   .head {
     padding-bottom: 50px; }
@@ -157,7 +207,13 @@ nav {
     width: 100%;
     top: 157px; }
     nav a {
-      padding: 15px 12px; }
+      padding: 15px 20px; }
+
+  .sub_item_ar {
+    background: none; }
+
+  .submenu_item:hover > .submenu {
+    display: none; }
 
   .navtree {
     display: none; }

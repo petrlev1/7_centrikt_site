@@ -1,10 +1,10 @@
 body {margin: 0 0; padding: 0 0; font-family:Verdana, Geneva, sans-serif; }
 
-a{text-decoration: none;
+a{text-decoration: none; border-style: none;
     &:hover{text-decoration: none; color: #6EC9EF;}
 }
 
-.head {border-bottom: 1px #c0ddf0 solid; padding-bottom: 15px; }
+.head {border-bottom: 1px #c0ddf0 solid; padding-bottom: 25px; }
 
 .head_line {position: absolute; background-color:#0078C3; right: 0; width: 50%; }
 
@@ -13,7 +13,7 @@ a{text-decoration: none;
 .logo {width: 332px; height: auto; max-width: 332px;}
 
 .contacts_up { color: #fff;
-    a{color:#fff; transition: all 0.3s ease 0s;
+    a{color:#fff; transition: color 0.3s ease 0s;
         &:hover{color: #FFFFBF;}}}
 
 .login {float: right; font-size: 15px; color: #FFFFBF; padding-right: 15px; padding-top: 3px;
@@ -28,24 +28,55 @@ a{text-decoration: none;
 }
 
 
-nav{ position: absolute; top: 57px; text-align: left; width: 1170px; left: 0; right: 0; margin: auto; text-align: right;
+nav{ position: absolute; top: 57px; text-align: left; width: 1170px; left: 0; right: 0; margin: auto; text-align: right; z-index: 99;
     
-    a { display: inline-block; font-size: 15px; white-space: nowrap; color: #024D7D; padding: 20px 25px; transition: all 0.3s ease 0s; 
+    a { display: inline-block; font-size: 15px; white-space: nowrap; color: #024D7D; padding: 20px 25px; transition: color 0.3s ease 0s; 
          &:hover{color:#6EC9EF;}
         }
        
 }
 
-.submenu {display: none; position: absolute; width: 100%; background-color: #D1E2ED; }
-
-.submenu_item { 
-    &:hover > .submenu {display: block;}
+.submenu { display: block; position: absolute; width: 100%; background-color: #D1E2ED; text-align: left;
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+    
+    a {display: block; white-space: pre-wrap; padding: 5px 0; margin: 5px 0;
+        &:hover{color: #2c9bc9;}}
+    
+    .container {padding: 20px 50px;}
 }
 
-.navtree { font-size: 14px; border-bottom: 1px #c0ddf0 solid; padding: 8px 0;
-    a{display: inline-block; padding: 3px 0;}
-    span {display: inline-block; width: 14px; height: 14px; background: url(img/navtree_arrow.png) no-repeat; background-position: top 1px right; margin: 0 5px;}
+
+.submenu_item {
+    &:hover > .submenu {
+    max-height: 600px;
+    transition: max-height 0.25s ease-in;}
 }
+
+.sub_item_ar { background: url(img/item_arrow.png) no-repeat; background-position: right;}
+
+
+.navtree { font-size: 14px; border-bottom: 1px #c0ddf0 solid; color: #999999;
+    a{display: inline-block; padding: 10px 10px; transition: all 0.3s ease 0s;
+        &:hover {color: #fff; background-color: #0078C3}
+    }
+}
+
+.treeitem { position: relative; display: inline-block;
+    &:hover {background-color: #0078C3;
+        a{color: #fff;}}
+    &:hover > .subtree { display: block;}
+}
+
+.tree_act {padding: 10px 10px;}
+
+.subtree{ display: none; position: absolute; background-color: #0078C3; width: 100%;
+    a {display: block; color: #fff; width: 100%;
+        &:hover {background-color: #0086D9;}}
+}
+
+.treearrow {display: inline-block; width: 14px; height: 14px; background: url(img/navtree_arrow.png) no-repeat; background-position: top 1px right; margin: 0;}
 
 
 
@@ -57,11 +88,11 @@ nav{ position: absolute; top: 57px; text-align: left; width: 1170px; left: 0; ri
 .foot_cont {font-size: 19px; padding: 10px 15px; background-color: #006099;}
 
 .contacts_foot { color: #fff;
-    a{color:#fff; transition: all 0.3s ease 0s;
+    a{color:#fff; transition: color 0.3s ease 0s;
         &:hover{color: #FFFFBF;}}}
 
 .foot_block { margin-bottom: 20px;
-    a{color: #9BBCCF; display: block; margin-bottom: 5px; transition: all 0.3s ease 0s;
+    a{color: #9BBCCF; display: block; margin-bottom: 5px; transition: color 0.3s ease 0s;
     &:hover{color: #fff;}
     }
 }
@@ -79,7 +110,7 @@ nav{ position: absolute; top: 57px; text-align: left; width: 1170px; left: 0; ri
 
     .logo {width:  315px;}
     nav{ width: 970px;
-    a {padding: 15px 12px; }
+    a {padding: 15px 14px; }
     }
     
 }
@@ -97,8 +128,15 @@ nav{ position: absolute; top: 57px; text-align: left; width: 1170px; left: 0; ri
 .head_line {display: none;}
     
 nav{ text-align: center; width: 100%; top: 157px; 
-    a {padding: 15px 12px;} 
+    a {padding: 15px 20px;} 
 }
+    
+    .sub_item_ar {background: none;}
+    
+    .submenu_item {
+    &:hover > .submenu {display: none;}
+}
+
     .navtree { display: none;}
     
     .foot_block {text-align: center;}
