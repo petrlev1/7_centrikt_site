@@ -6,7 +6,8 @@ body {
 
 a {
   text-decoration: none;
-  border-style: none; }
+  border-style: none;
+  transition: color 0.3s ease 0s; }
   a:hover {
     text-decoration: none;
     color: #6EC9EF; }
@@ -75,14 +76,14 @@ nav {
     font-size: 16px;
     white-space: nowrap;
     color: #024D7D;
-    padding: 10px 25px;
+    padding: 10px 26px;
     transition: color 0.3s ease 0s; }
     nav a:hover {
       color: #6EC9EF; }
 
 .menu_item {
   background: url(img/item_arrow.png) no-repeat;
-  background-position: right 5px top 17px; }
+  background-position: right 5px top 16px; }
 
 .submenu {
   display: none;
@@ -213,7 +214,7 @@ nav {
 h2 {
   color: #0366A6;
   font-size: 50px;
-  margin: 20px 0 30px 0; }
+  margin: 0 0 30px 0; }
 
 /* in_page */
 .in_cont, .in_cont_centr {
@@ -222,19 +223,36 @@ h2 {
   background-color: #F5F6F7;
   line-height: 25px; }
 
+.in_left_cont {
+  padding-right: 50px; }
+
 .in_cont_centr {
   text-align: center; }
+
+.cont_catalog {
+  margin: 10px 0; }
 
 p {
   margin: 15px 0; }
 
 .img_products img {
+  width: 70%;
+  height: auto; }
+
+.img_products2 img {
   width: 100%;
   height: auto; }
 
 .products_price {
   font-size: 24px;
   color: #4D4D4D; }
+
+.products_ind h3 {
+  padding: 50px 30px;
+  transition: all 0.3s ease 0s; }
+  .products_ind h3:hover {
+    color: #fff;
+    background-color: #0366A6; }
 
 /* /in_page */
 /* elements */
@@ -253,7 +271,7 @@ p {
     width: 970px;
     top: 45px; }
     nav a {
-      padding: 15px 14px;
+      padding: 15px 15px;
       font-size: 15px; }
 
   .menu_item {
@@ -261,10 +279,10 @@ p {
 @media (max-width: 992px) {
   .head {
     padding-bottom: 65px;
-    height: 220px; }
+    height: 190px; }
 
   .logo {
-    width: 332px;
+    width: 250px;
     position: relative; }
 
   .head_line {
@@ -276,7 +294,7 @@ p {
   nav {
     text-align: center;
     width: 100%;
-    top: 160px; }
+    top: 130px; }
     nav a {
       padding: 15px 20px; }
 
@@ -289,15 +307,31 @@ p {
   .navtree {
     display: none; }
 
+  .in_left_cont {
+    padding-right: 0; }
+
   .foot_block, .foot_block_links {
-    text-align: center; } }
+    text-align: center; }
+
+  h2 {
+    font-size: 30px; } }
 @media (max-width: 768px) {
+  .head_line {
+    display: block; }
+
+  .head_cont {
+    top: -1px; }
+
   .head {
     padding-bottom: 0;
     height: 145px; }
 
   .logo {
-    width: 100%; }
+    position: absolute;
+    width: 150px;
+    top: 0;
+    left: 5px;
+    background-color: #fff; }
 
   .head_cont {
     height: 48px; }
@@ -306,9 +340,10 @@ p {
     display: none; }
 
   nav {
-    display: none; }
+    display: block;
+    top: 50px; }
     nav a {
-      display: block; }
+      padding: 4px 10px; }
 
   .navtree {
     display: none; } }
