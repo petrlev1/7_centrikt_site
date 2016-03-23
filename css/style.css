@@ -65,7 +65,10 @@ nav {
   right: 0;
   margin: auto;
   text-align: right;
-  z-index: 99; }
+  z-index: 99;
+  padding: 5px 0; }
+  nav:hover .submenu {
+    display: block; }
   nav a {
     display: inline-block;
     font-size: 15px;
@@ -77,7 +80,7 @@ nav {
       color: #6EC9EF; }
 
 .submenu {
-  display: block;
+  display: none;
   position: absolute;
   width: 100%;
   background-color: #D1E2ED;

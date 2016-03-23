@@ -4,7 +4,7 @@ a{text-decoration: none; border-style: none;
     &:hover{text-decoration: none; color: #6EC9EF;}
 }
 
-.head {border-bottom: 1px #c0ddf0 solid; padding-bottom: 25px; }
+.head {border-bottom: 1px #c0ddf0 solid; padding-bottom: 25px;}
 
 .head_line {position: absolute; background-color:#0078C3; right: 0; width: 50%; }
 
@@ -28,7 +28,9 @@ a{text-decoration: none; border-style: none;
 }
 
 
-nav{ position: absolute; top: 57px; text-align: left; width: 1170px; left: 0; right: 0; margin: auto; text-align: right; z-index: 99;
+nav{ position: absolute; top: 57px; text-align: left; width: 1170px; left: 0; right: 0; margin: auto; text-align: right; z-index: 99; padding: 5px 0;
+    
+     &:hover .submenu{display: block;}
     
     a { display: inline-block; font-size: 15px; white-space: nowrap; color: #024D7D; padding: 20px 25px; transition: color 0.3s ease 0s; 
          &:hover{color:#6EC9EF;}
@@ -36,7 +38,7 @@ nav{ position: absolute; top: 57px; text-align: left; width: 1170px; left: 0; ri
        
 }
 
-.submenu { display: block; position: absolute; width: 100%; background-color: #D1E2ED; text-align: left;
+.submenu { display: none; position: absolute; width: 100%; background-color: #D1E2ED; text-align: left;
     max-height: 0;
     transition: max-height 0.15s ease-out;
     overflow: hidden;
