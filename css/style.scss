@@ -1,52 +1,55 @@
-body {margin: 0 0; padding: 0 0; font-family:Verdana, Geneva, sans-serif; }
+body {margin: 0 0; padding: 0 0; font-family:Verdana, Geneva, sans-serif; color: #4D4D4D; }
 
 a{text-decoration: none; border-style: none;
     &:hover{text-decoration: none; color: #6EC9EF;}
 }
 
-.head {border-bottom: 1px #c0ddf0 solid; padding-bottom: 25px;}
+.head {border-bottom: 1px #c0ddf0 solid; height: 120px;}
 
 .head_line {position: absolute; background-color:#0078C3; right: 0; width: 50%; }
 
 .head_cont { position: relative; color: #fff; font-size: 19px; padding: 10px 15px; background-color:#0078C3;}
 
-.logo {width: 332px; height: auto; max-width: 332px;}
+.logo {position: absolute; width: 332px; height: auto; max-width: 332px; z-index: 99;}
 
 .contacts_up { color: #fff;
     a{color:#fff; transition: color 0.3s ease 0s;
         &:hover{color: #FFFFBF;}}}
 
-.login {float: right; font-size: 15px; color: #FFFFBF; padding-right: 15px; padding-top: 3px;
+.login {float: right; font-size: 15px; color: #fff; padding-top: 3px;
     &:hover{color: #FFFFBF;}
     &:after {
         content: "\27A7";
         position: absolute;
-        top: 1px;
+        top: 2px;
         display: inline-block;
-        padding: 13px 0 0 5px; margin-right: 10px
+        padding: 13px 0 0 5px;
     }
 }
 
 
-nav{ position: absolute; top: 57px; text-align: left; width: 1170px; left: 0; right: 0; margin: auto; text-align: right; z-index: 99; padding: 5px 0;
+nav{ position: absolute; top: 55px; text-align: left; width: 1170px; left: 0; right: 0; margin: auto; text-align: right; z-index: 2; padding: 5px 0;
     
      &:hover .submenu{display: block;}
     
-    a { display: inline-block; font-size: 15px; white-space: nowrap; color: #024D7D; padding: 20px 25px; transition: color 0.3s ease 0s; 
+    a { display: inline-block; font-size: 16px; white-space: nowrap; color: #024D7D; padding: 10px 25px; transition: color 0.3s ease 0s; 
          &:hover{color:#6EC9EF;}
         }
        
 }
+
+.menu_item { background: url(img/item_arrow.png) no-repeat; background-position: right 5px top 17px;}
 
 .submenu { display: none; position: absolute; width: 100%; background-color: #D1E2ED; text-align: left;
     max-height: 0;
     transition: max-height 0.15s ease-out;
     overflow: hidden;
     
-    a {display: block; white-space: pre-wrap; padding: 5px 0; margin: 5px 0;
+    a { font-size: 15px; display: block; white-space: pre-wrap; padding: 5px 0; margin: 5px 0;
         &:hover{color: #2c9bc9;}}
     
     .container {padding: 20px 50px;}
+    h3 {font-size: 18px; padding: 0; margin-bottom: 20px;}
 }
 
 
@@ -56,29 +59,31 @@ nav{ position: absolute; top: 57px; text-align: left; width: 1170px; left: 0; ri
     transition: max-height 0.25s ease-in;}
 }
 
-.sub_item_ar { background: url(img/item_arrow.png) no-repeat; background-position: right;}
 
-
-.navtree { font-size: 14px; border-bottom: 1px #c0ddf0 solid; color: #999999;
-    a{display: inline-block; padding: 10px 10px; transition: all 0.3s ease 0s;
+.navtree { font-size: 14px; border-bottom: 1px #c0ddf0 solid; letter-spacing: 0.3px;
+    a{display: inline-block; padding: 10px 15px; transition: all 0.3s ease 0s; color: #0366A6;
         &:hover {color: #fff; background-color: #0078C3}
     }
 }
 
 .treeitem { position: relative; display: inline-block;
     &:hover {background-color: #0078C3;
-        a{color: #fff;}}
+        a {color: #fff;}}
     &:hover > .subtree { display: block;}
 }
 
 .tree_act {padding: 10px 10px;}
 
-.subtree{ display: none; position: absolute; background-color: #0078C3; width: 100%;
-    a {display: block; color: #fff; width: 100%;
-        &:hover {background-color: #0086D9;}}
+.subtree{ display: none; position: absolute; background-color: #0078C3; width: 100%; z-index: 2; min-width: 350px; padding-bottom: 5px;
+    
+    a {display: block; color:#000; width: 100%; padding: 6px 15px;
+        &:hover { background-color: #0086D9;}
+    }
 }
 
-.treearrow {display: inline-block; width: 14px; height: 14px; background: url(img/navtree_arrow.png) no-repeat; background-position: top 1px right; margin: 0;}
+.subtree_tit { font-size: 13px; color: #AACDE3; font-weight: bold; padding: 10px 15px 5px 15px;}
+
+.treearrow {display: inline-block; width: 5px; height: 14px; background: url(img/navtree_arrow.png) no-repeat; background-position: top 1px right -3px; margin: 0;}
 
 
 
@@ -94,12 +99,56 @@ nav{ position: absolute; top: 57px; text-align: left; width: 1170px; left: 0; ri
         &:hover{color: #FFFFBF;}}}
 
 .foot_block { margin-bottom: 20px;
-    a{color: #9BBCCF; display: block; margin-bottom: 5px; transition: color 0.3s ease 0s;
+    a{color: #9BBCCF; transition: color 0.3s ease 0s;
     &:hover{color: #fff;}
     }
 }
+.foot_block_links { @extend .foot_block;
+    a{display: block; margin-bottom: 8px;}
+}
+
+.foot_block_tit { font-weight: bold; margin: 25px 0 10px 0;}
 
 .copyr { padding: 20px 0; border-top: 1px #40789a solid;}
+
+h2 { color: #0366A6; font-size: 50px; margin: 20px 0 30px 0;}
+
+
+
+
+
+
+
+
+
+/* in_page */
+
+.in_cont {font-size: 15px; padding: 30px 0; background-color: #F5F6F7; line-height: 25px; }
+
+.in_cont_centr { @extend .in_coont; text-align: center;}
+
+p{margin: 15px 0;}
+
+.img_products {
+    img{width: 100%; height: auto;}
+}
+
+.products_price {font-size: 24px; color: #4D4D4D;}
+
+/* /in_page */
+
+
+
+
+
+
+
+/* elements */
+
+.btn {font-size: 20px; padding: 10px 20px; transition: all 0.3s ease 0s;}
+
+/* /elements */
+
 
 
 
@@ -110,10 +159,13 @@ nav{ position: absolute; top: 57px; text-align: left; width: 1170px; left: 0; ri
 
 @media (max-width: 1200px) {
 
-    .logo {width:  315px;}
-    nav{ width: 970px;
-    a {padding: 15px 14px; }
+    .logo {width:  325px; left: 0;}
+    
+    nav{ width: 970px; top: 45px;
+    a {padding: 15px 14px; font-size: 15px; }
     }
+    
+    .menu_item { background-position: right -2px top 21px;}
     
 }
 
@@ -123,17 +175,19 @@ nav{ position: absolute; top: 57px; text-align: left; width: 1170px; left: 0; ri
 
 @media (max-width: 992px) {
     
-    .head {padding-bottom: 50px;}
+    .head {padding-bottom: 65px; height: 220px;}
     
-    .logo{width: 332px;}
+    .logo{width: 332px; position: relative;}
     
 .head_line {display: none;}
     
-nav{ text-align: center; width: 100%; top: 157px; 
+.login{margin-right: 15px;}
+    
+nav{ text-align: center; width: 100%; top: 160px; 
     a {padding: 15px 20px;} 
 }
     
-    .sub_item_ar {background: none;}
+    .menu_item {background: none;}
     
     .submenu_item {
     &:hover > .submenu {display: none;}
@@ -150,7 +204,7 @@ nav{ text-align: center; width: 100%; top: 157px;
 
 @media (max-width: 768px) {
     
-    .head {padding-bottom: 0;}
+    .head {padding-bottom: 0; height: 145px;}
 
 .logo {width:100%;}
     
