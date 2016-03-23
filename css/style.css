@@ -1,35 +1,316 @@
-/*
-Sass::SyntaxError: ".in_cont_centr" failed to @extend ".in_coont".
-The selector ".in_coont" was not found.
-Use "@extend .in_coont !optional" if the extend should be able to fail.
+body {
+  margin: 0 0;
+  padding: 0 0;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #4D4D4D; }
 
+a {
+  text-decoration: none;
+  border-style: none; }
+  a:hover {
+    text-decoration: none;
+    color: #6EC9EF; }
 
-Backtrace:
-style.scss:128
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/extend.rb:62:in `block in check_extends_fired!'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/util/subset_map.rb:105:in `block in each_value'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/util/subset_map.rb:105:in `each'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/util/subset_map.rb:105:in `each_value'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/extend.rb:16:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:39:in `css_tree'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Sass::SyntaxError: \".in_cont_centr\" failed to @extend \".in_coont\".\A The selector \".in_coont\" was not found.\A Use \"@extend .in_coont !optional\" if the extend should be able to fail.\A "; }
+.head {
+  border-bottom: 1px #c0ddf0 solid;
+  height: 120px; }
+
+.head_line {
+  position: absolute;
+  background-color: #0078C3;
+  right: 0;
+  width: 50%; }
+
+.head_cont {
+  position: relative;
+  color: #fff;
+  font-size: 19px;
+  padding: 10px 15px;
+  background-color: #0078C3; }
+
+.logo {
+  position: absolute;
+  width: 332px;
+  height: auto;
+  max-width: 332px;
+  z-index: 99; }
+
+.contacts_up {
+  color: #fff; }
+  .contacts_up a {
+    color: #fff;
+    transition: color 0.3s ease 0s; }
+    .contacts_up a:hover {
+      color: #FFFFBF; }
+
+.login {
+  float: right;
+  font-size: 15px;
+  color: #fff;
+  padding-top: 3px; }
+  .login:hover {
+    color: #FFFFBF; }
+  .login:after {
+    content: "\27A7";
+    position: absolute;
+    top: 2px;
+    display: inline-block;
+    padding: 13px 0 0 5px; }
+
+nav {
+  position: absolute;
+  top: 55px;
+  text-align: left;
+  width: 1170px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: right;
+  z-index: 2;
+  padding: 5px 0; }
+  nav:hover .submenu {
+    display: block; }
+  nav a {
+    display: inline-block;
+    font-size: 16px;
+    white-space: nowrap;
+    color: #024D7D;
+    padding: 10px 25px;
+    transition: color 0.3s ease 0s; }
+    nav a:hover {
+      color: #6EC9EF; }
+
+.menu_item {
+  background: url(img/item_arrow.png) no-repeat;
+  background-position: right 5px top 17px; }
+
+.submenu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #D1E2ED;
+  text-align: left;
+  max-height: 0;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden; }
+  .submenu a {
+    font-size: 15px;
+    display: block;
+    white-space: pre-wrap;
+    padding: 5px 0;
+    margin: 5px 0; }
+    .submenu a:hover {
+      color: #2c9bc9; }
+  .submenu .container {
+    padding: 20px 50px; }
+  .submenu h3 {
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 20px; }
+
+.submenu_item:hover > .submenu {
+  max-height: 600px;
+  transition: max-height 0.25s ease-in; }
+
+.navtree {
+  font-size: 14px;
+  border-bottom: 1px #c0ddf0 solid;
+  letter-spacing: 0.3px; }
+  .navtree a {
+    display: inline-block;
+    padding: 10px 15px;
+    transition: all 0.3s ease 0s;
+    color: #0366A6; }
+    .navtree a:hover {
+      color: #fff;
+      background-color: #0078C3; }
+
+.treeitem {
+  position: relative;
+  display: inline-block; }
+  .treeitem:hover {
+    background-color: #0078C3; }
+    .treeitem:hover a {
+      color: #fff; }
+  .treeitem:hover > .subtree {
+    display: block; }
+
+.tree_act {
+  padding: 10px 10px; }
+
+.subtree {
+  display: none;
+  position: absolute;
+  background-color: #0078C3;
+  width: 100%;
+  z-index: 2;
+  min-width: 350px;
+  padding-bottom: 5px; }
+  .subtree a {
+    display: block;
+    color: #000;
+    width: 100%;
+    padding: 6px 15px; }
+    .subtree a:hover {
+      background-color: #0086D9; }
+
+.subtree_tit {
+  font-size: 13px;
+  color: #AACDE3;
+  font-weight: bold;
+  padding: 10px 15px 5px 15px; }
+
+.treearrow {
+  display: inline-block;
+  width: 5px;
+  height: 14px;
+  background: url(img/navtree_arrow.png) no-repeat;
+  background-position: top 1px right -3px;
+  margin: 0; }
+
+.footer {
+  background-color: #004B78;
+  background: linear-gradient(to top, #004B78, #004066);
+  color: #9BBCCF;
+  font-size: 12px; }
+  .footer h2 {
+    font-size: 12px;
+    font-weight: bold; }
+
+.foot_cont {
+  font-size: 19px;
+  padding: 10px 15px;
+  background-color: #006099; }
+
+.contacts_foot {
+  color: #fff; }
+  .contacts_foot a {
+    color: #fff;
+    transition: color 0.3s ease 0s; }
+    .contacts_foot a:hover {
+      color: #FFFFBF; }
+
+.foot_block, .foot_block_links {
+  margin-bottom: 20px; }
+  .foot_block a, .foot_block_links a {
+    color: #9BBCCF;
+    transition: color 0.3s ease 0s; }
+    .foot_block a:hover, .foot_block_links a:hover {
+      color: #fff; }
+
+.foot_block_links a {
+  display: block;
+  margin-bottom: 8px; }
+
+.foot_block_tit {
+  font-weight: bold;
+  margin: 25px 0 10px 0; }
+
+.copyr {
+  padding: 20px 0;
+  border-top: 1px #40789a solid; }
+
+h2 {
+  color: #0366A6;
+  font-size: 50px;
+  margin: 20px 0 30px 0; }
+
+/* in_page */
+.in_cont, .in_cont_centr {
+  font-size: 15px;
+  padding: 30px 0;
+  background-color: #F5F6F7;
+  line-height: 25px; }
+
+.in_cont_centr {
+  text-align: center; }
+
+p {
+  margin: 15px 0; }
+
+.img_products img {
+  width: 100%;
+  height: auto; }
+
+.products_price {
+  font-size: 24px;
+  color: #4D4D4D; }
+
+/* /in_page */
+/* elements */
+.btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  transition: all 0.3s ease 0s; }
+
+/* /elements */
+@media (max-width: 1200px) {
+  .logo {
+    width: 325px;
+    left: 0; }
+
+  nav {
+    width: 970px;
+    top: 45px; }
+    nav a {
+      padding: 15px 14px;
+      font-size: 15px; }
+
+  .menu_item {
+    background-position: right -2px top 21px; } }
+@media (max-width: 992px) {
+  .head {
+    padding-bottom: 65px;
+    height: 220px; }
+
+  .logo {
+    width: 332px;
+    position: relative; }
+
+  .head_line {
+    display: none; }
+
+  .login {
+    margin-right: 15px; }
+
+  nav {
+    text-align: center;
+    width: 100%;
+    top: 160px; }
+    nav a {
+      padding: 15px 20px; }
+
+  .menu_item {
+    background: none; }
+
+  .submenu_item:hover > .submenu {
+    display: none; }
+
+  .navtree {
+    display: none; }
+
+  .foot_block, .foot_block_links {
+    text-align: center; } }
+@media (max-width: 768px) {
+  .head {
+    padding-bottom: 0;
+    height: 145px; }
+
+  .logo {
+    width: 100%; }
+
+  .head_cont {
+    height: 48px; }
+
+  .contacts_up {
+    display: none; }
+
+  nav {
+    display: none; }
+    nav a {
+      display: block; }
+
+  .navtree {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */

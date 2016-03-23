@@ -125,7 +125,7 @@ h2 { color: #0366A6; font-size: 50px; margin: 20px 0 30px 0;}
 
 .in_cont {font-size: 15px; padding: 30px 0; background-color: #F5F6F7; line-height: 25px; }
 
-.in_cont_centr { @extend .in_coont; text-align: center;}
+.in_cont_centr { @extend .in_cont; text-align: center;}
 
 p{margin: 15px 0;}
 
