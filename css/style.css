@@ -60,7 +60,7 @@ a {
 
 nav {
   position: absolute;
-  top: 55px;
+  top: 47px;
   text-align: left;
   width: 1170px;
   left: 0;
@@ -76,14 +76,14 @@ nav {
     font-size: 16px;
     white-space: nowrap;
     color: #024D7D;
-    padding: 10px 26px;
+    padding: 20px 26px 25px 26px;
     transition: color 0.3s ease 0s; }
     nav a:hover {
       color: #6EC9EF; }
 
 .menu_item {
   background: url(img/item_arrow.png) no-repeat;
-  background-position: right 5px top 16px; }
+  background-position: right 5px top 26px; }
 
 .submenu {
   display: none;
@@ -219,15 +219,15 @@ h2 {
 /* in_page */
 .in_cont, .in_cont_centr {
   font-size: 15px;
-  padding: 30px 0;
+  padding: 30px 0 60px 0;
   background-color: #F5F6F7;
   line-height: 25px; }
 
-.in_left_cont {
-  padding-right: 50px; }
-
 .in_cont_centr {
   text-align: center; }
+
+.in_left_cont {
+  padding-right: 50px; }
 
 .cont_catalog {
   margin: 10px 0; }
@@ -254,6 +254,9 @@ p {
     color: #fff;
     background-color: #0366A6; }
 
+.prod_catalog_padding {
+  padding: 10px 30px; }
+
 /* /in_page */
 /* elements */
 .btn {
@@ -269,13 +272,13 @@ p {
 
   nav {
     width: 970px;
-    top: 45px; }
+    top: 47px; }
     nav a {
-      padding: 15px 15px;
+      padding: 23px 15px;
       font-size: 15px; }
 
   .menu_item {
-    background-position: right -2px top 21px; } }
+    background-position: right -2px top 29px; } }
 @media (max-width: 992px) {
   .head {
     padding-bottom: 65px;
