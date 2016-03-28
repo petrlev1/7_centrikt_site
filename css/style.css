@@ -7,10 +7,13 @@ body {
 a {
   text-decoration: none;
   border-style: none;
-  transition: color 0.3s ease 0s; }
+  transition: color 0.3s ease 0s;
+  color: #2185C5; }
   a:hover {
     text-decoration: none;
-    color: #6EC9EF; }
+    color: #4db8e5; }
+  a:active {
+    text-decoration: none; }
 
 .head {
   border-bottom: 1px #c0ddf0 solid;
@@ -296,8 +299,33 @@ p {
   font-size: 33px; }
 
 .ind_block {
+  position: relative;
   margin: 10px 20px 40px 20px;
-  min-height: 200px; }
+  min-height: 220px; }
+  .ind_block img {
+    width: 150px;
+    position: relative;
+    z-index: 1; }
+  .ind_block:hover .ind_icon_shadow {
+    opacity: 0.8;
+    transition: all 0.3s ease 0s; }
+  .ind_block a {
+    color: #4D4D4D; }
+    .ind_block a:hover {
+      color: #2185C5; }
+
+.ind_icon_shadow {
+  position: absolute;
+  opacity: 0;
+  top: 98px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 131px;
+  height: 49px;
+  background: url(img/index/ind_icon_shadow.png) center no-repeat;
+  transition: all 0.3s ease 0s;
+  z-index: 0; }
 
 .block_news {
   font-size: 14px;
@@ -332,6 +360,38 @@ p {
       background-color: #0478C3; }
 
 /* /page index */
+/* page about */
+.about_testern1 {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+.about_testern1_img {
+  position: absolute;
+  top: 10px;
+  left: -800px;
+  right: 0;
+  margin: 0 auto; }
+
+.about_testern1_text {
+  margin: 110px 0 110px 45%; }
+
+.about_img1 {
+  border: 1px solid #fff;
+  box-shadow: 0 8px 30px rgba(4, 120, 192, 0.2); }
+
+.about_etsp_img {
+  position: absolute;
+  top: 0;
+  right: -850px;
+  left: 0;
+  margin: 0 auto; }
+
+.about_etsp_text {
+  padding-bottom: 120px;
+  padding-top: 70px; }
+
+/* page /about */
 @media (max-width: 1200px) {
   .logo {
     width: 325px;
@@ -349,7 +409,10 @@ p {
 
   .btn_roznica {
     right: 0;
-    bottom: -35px; } }
+    bottom: -35px; }
+
+  .about_testern1_text {
+    margin: 100px 0 100px 45%; } }
 @media (max-width: 992px) {
   .head {
     padding-bottom: 65px;
@@ -392,7 +455,20 @@ p {
 
   .btn_roznica {
     right: 0;
-    bottom: -40px; } }
+    bottom: -40px; }
+
+  .about_testern1_text {
+    margin: 0 0 0 0; }
+
+  .about_testern1_img {
+    display: none; }
+
+  .about_etsp_img {
+    display: none; }
+
+  .about_etsp_text {
+    padding-bottom: 0;
+    padding-top: 0; } }
 @media (max-width: 768px) {
   .head_line {
     display: block; }

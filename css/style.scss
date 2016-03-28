@@ -1,7 +1,8 @@
 body {margin: 0 0; padding: 0 0; font-family:Verdana, Geneva, sans-serif; color: #4D4D4D; }
 
-a{text-decoration: none; border-style: none; transition: color 0.3s ease 0s;
-    &:hover{text-decoration: none; color: #6EC9EF;}
+a{text-decoration: none; border-style: none; transition: color 0.3s ease 0s; color: #2185C5;
+    &:hover{text-decoration: none; color: #4db8e5;}
+    &:active {text-decoration: none;}
 }
 
 .head {border-bottom: 1px #c0ddf0 solid; height: 120px;}
@@ -185,7 +186,14 @@ p{margin: 15px 0;}
 
 .ind_pic_text { color: #0478C3; font-size: 33px;}
 
-.ind_block { margin: 10px 20px 40px 20px; min-height: 200px;}
+.ind_block { position: relative; margin: 10px 20px 40px 20px; min-height: 220px;
+    img {width: 150px; position: relative; z-index: 1;}
+    &:hover .ind_icon_shadow {opacity: 0.8; transition: all 0.3s ease 0s;}
+    a{color: #4D4D4D;
+    &:hover{ color: #2185C5;}}
+}
+
+.ind_icon_shadow { position: absolute; opacity: 0; top: 98px; left: 0; right: 0; margin: auto; width: 131px; height: 49px; background: url(img/index/ind_icon_shadow.png) center no-repeat; transition: all 0.3s ease 0s; z-index: 0;}
 
 
 .block_news { @extend .in_cont; font-size: 14px; line-height: normal;
@@ -200,6 +208,26 @@ p{margin: 15px 0;}
         &:hover{color: #fff; background-color: #0478C3; }}}
 
 /* /page index */
+
+
+
+
+
+/* page about */
+
+.about_testern1 { position: relative; overflow-x:hidden; overflow-y: hidden;}
+.about_testern1_img { position: absolute; top: 10px; left: -800px; right: 0; margin: 0 auto;}
+.about_testern1_text { margin: 110px 0 110px 45%;}
+
+.about_img1 { border: 1px solid #fff; box-shadow: 0 8px 30px rgba(4,120,192,0.2); }
+
+.about_etsp_img { position: absolute; top: 0; right: -850px; left: 0; margin: 0 auto;}
+.about_etsp_text { padding-bottom: 120px; padding-top: 70px;}
+
+/* page /about */
+
+
+
 
 
 
@@ -222,6 +250,8 @@ p{margin: 15px 0;}
     .menu_item { background-position: right -2px top 29px;}
     
     .btn_roznica { right: 0; bottom: -35px; }
+    
+    .about_testern1_text { margin: 100px 0 100px 45%;}
     
 }
 
@@ -259,6 +289,13 @@ nav{ text-align: center; width: 100%; top: 130px;
     h2 {font-size: 30px;}
     
     .btn_roznica { right: 0; bottom: -40px; }
+    
+    
+    .about_testern1_text { margin: 0 0 0 0;}
+    .about_testern1_img { display: none;}
+    
+    .about_etsp_img { display: none;}
+    .about_etsp_text { padding-bottom: 0; padding-top: 0;}
     
 }
 
