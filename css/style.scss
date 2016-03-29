@@ -33,7 +33,7 @@ nav{ position: absolute; top: 47px; text-align: left; width: 1170px; left: 0; ri
     
      &:hover .submenu{display: block;}
     
-    a { display: inline-block; font-size: 16px; white-space: nowrap; color: #024D7D; padding: 20px 26px 25px 26px; transition: color 0.3s ease 0s; 
+    a { display: inline-block; font-size: 16px; white-space: nowrap; color: #0366A6; padding: 20px 26px 25px 26px; transition: color 0.3s ease 0s; 
          &:hover{color:#6EC9EF;}
         }
        
@@ -41,7 +41,7 @@ nav{ position: absolute; top: 47px; text-align: left; width: 1170px; left: 0; ri
 
 .menu_item { background: url(img/item_arrow.png) no-repeat; background-position: right 5px top 26px;}
 
-.submenu { display: none; position: absolute; width: 100%; background-color: #D1E2ED; text-align: left;
+.submenu { display: none; position: absolute; width: 100%; background-color: #DCF1FA; text-align: left;
     max-height: 0;
     transition: max-height 0.15s ease-out;
     overflow: hidden;
@@ -116,6 +116,8 @@ h2 { color: #0366A6; font-size: 50px; margin: 20px 0 30px 0;}
 
 h3 {font-size: 24px; margin-bottom: 30px; margin-top: 50px; line-height: normal;}
 
+.note_success {color:#449d44; margin-top:10px;}
+
 
 
 
@@ -177,7 +179,14 @@ p{margin: 15px 0;}
 
 /* page index */
 
-.ind_block_section {text-align: center; background: linear-gradient(to top, #F0F1F2, #F5F6F7); border-bottom: 1px #b9d6ea solid; padding: 40px 0 0 0;}
+.ind_block_section {text-align: center; background: linear-gradient(to top, #F5F6F7, #f7faff); border-bottom: 1px #b9d6ea solid; padding: 40px 0 0 0;}
+
+.ind_block_uslugi { @extend .ind_block_section; background:#f7faff url(img/index/uslugi100.jpg) center top no-repeat;}
+.ind_block_uslugi_links { text-align:left; transition: all 0.3s ease 0s;
+                         a {display:block; color:#0366A6; font-size:24px; padding: 40px 0 40px 110px; background: rgba(102, 169, 237,0) url(img/index/ind_uslugi_li.png) 50px no-repeat; border-bottom:1px #b4d2e5 solid; transition: all 0.3s ease 0s;
+                            &:hover {background: rgba(102, 169, 237, 0.1) url(img/index/ind_uslugi_li.png) 55px no-repeat; transition: all 0.3s ease 0s;}
+                         }
+}
 
 .ind_h2 { margin-bottom: 50px;}
 
@@ -188,7 +197,7 @@ p{margin: 15px 0;}
 
 .ind_block { position: relative; margin: 10px 20px 40px 20px; min-height: 220px;
     img {width: 150px; position: relative; z-index: 1;}
-    &:hover .ind_icon_shadow {opacity: 0.8; transition: all 0.3s ease 0s;}
+    &:hover .ind_icon_shadow {opacity: 0.6; transition: all 0.3s ease 0s;}
     a{color: #4D4D4D;
     &:hover{ color: #2185C5;}}
 }
@@ -206,6 +215,12 @@ p{margin: 15px 0;}
 .btn_roznica {position:absolute; right: 10px; bottom: -50px; font-size: 19px;
     a{padding: 10px 10px; border-bottom: 1px #6EC9EF solid; border-radius: 10px; background-color: #fff;
         &:hover{color: #fff; background-color: #0478C3; }}}
+
+.ind_block_oborud { position: relative; color: #4D4D4D; display: block; width: 390px; min-height: 220px; padding: 173px 5px 5px 5px; background: top center no-repeat; border: 1px #F0F1F2 solid; border-radius: 5px; transition: all 0.3s ease 0s; left: 0; right: 0; margin: auto; margin-bottom: 50px;
+    &:hover{ color: #2185C5; border-color: #2185C5;}
+    &:hover {.ind_block_oborud_a {opacity: 1; transition: all 0.3s ease 0s;}}
+}
+.ind_block_oborud_a { position: absolute; opacity: 0; top: 0; left:0; right: 0; margin: auto; transition: all 0.3s ease 0s;}
 
 /* /page index */
 
@@ -324,5 +339,7 @@ nav { display: block; top: 50px;
     .navtree { display: none;}
     
     .ind_pic { display: none; }
+    
+    .ind_block_oborud {width: 100%;}
     
 }

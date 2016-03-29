@@ -78,7 +78,7 @@ nav {
     display: inline-block;
     font-size: 16px;
     white-space: nowrap;
-    color: #024D7D;
+    color: #0366A6;
     padding: 20px 26px 25px 26px;
     transition: color 0.3s ease 0s; }
     nav a:hover {
@@ -92,7 +92,7 @@ nav {
   display: none;
   position: absolute;
   width: 100%;
-  background-color: #D1E2ED;
+  background-color: #DCF1FA;
   text-align: left;
   max-height: 0;
   transition: max-height 0.15s ease-out;
@@ -225,6 +225,10 @@ h3 {
   margin-top: 50px;
   line-height: normal; }
 
+.note_success {
+  color: #449d44;
+  margin-top: 10px; }
+
 /* in_page */
 .in_cont, .in_cont_centr, .block_news {
   font-size: 15px;
@@ -275,11 +279,29 @@ p {
 
 /* /elements */
 /* page index */
-.ind_block_section {
+.ind_block_section, .ind_block_uslugi {
   text-align: center;
-  background: linear-gradient(to top, #F0F1F2, #F5F6F7);
+  background: linear-gradient(to top, #F5F6F7, #f7faff);
   border-bottom: 1px #b9d6ea solid;
   padding: 40px 0 0 0; }
+
+.ind_block_uslugi {
+  background: #f7faff url(img/index/uslugi100.jpg) center top no-repeat; }
+
+.ind_block_uslugi_links {
+  text-align: left;
+  transition: all 0.3s ease 0s; }
+  .ind_block_uslugi_links a {
+    display: block;
+    color: #0366A6;
+    font-size: 24px;
+    padding: 40px 0 40px 110px;
+    background: rgba(102, 169, 237, 0) url(img/index/ind_uslugi_li.png) 50px no-repeat;
+    border-bottom: 1px #b4d2e5 solid;
+    transition: all 0.3s ease 0s; }
+    .ind_block_uslugi_links a:hover {
+      background: rgba(102, 169, 237, 0.1) url(img/index/ind_uslugi_li.png) 55px no-repeat;
+      transition: all 0.3s ease 0s; }
 
 .ind_h2 {
   margin-bottom: 50px; }
@@ -307,7 +329,7 @@ p {
     position: relative;
     z-index: 1; }
   .ind_block:hover .ind_icon_shadow {
-    opacity: 0.8;
+    opacity: 0.6;
     transition: all 0.3s ease 0s; }
   .ind_block a {
     color: #4D4D4D; }
@@ -358,6 +380,37 @@ p {
     .btn_roznica a:hover {
       color: #fff;
       background-color: #0478C3; }
+
+.ind_block_oborud {
+  position: relative;
+  color: #4D4D4D;
+  display: block;
+  width: 390px;
+  min-height: 220px;
+  padding: 173px 5px 5px 5px;
+  background: top center no-repeat;
+  border: 1px #F0F1F2 solid;
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-bottom: 50px; }
+  .ind_block_oborud:hover {
+    color: #2185C5;
+    border-color: #2185C5; }
+  .ind_block_oborud:hover .ind_block_oborud_a {
+    opacity: 1;
+    transition: all 0.3s ease 0s; }
+
+.ind_block_oborud_a {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 0.3s ease 0s; }
 
 /* /page index */
 /* page about */
@@ -503,6 +556,9 @@ p {
     display: none; }
 
   .ind_pic {
-    display: none; } }
+    display: none; }
+
+  .ind_block_oborud {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
