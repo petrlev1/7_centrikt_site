@@ -2,7 +2,7 @@ body {margin: 0 0; padding: 0 0; font-family:Verdana, Geneva, sans-serif; color:
 
 a{text-decoration: none; border-style: none; transition: color 0.3s ease 0s; color: #2185C5;
     &:hover{text-decoration: none; color: #4db8e5;}
-    &:active {text-decoration: none;}
+    &:active {text-decoration: none; }
 }
 
 .head {border-bottom: 1px #c0ddf0 solid; height: 120px;}
@@ -118,6 +118,74 @@ h3 {font-size: 24px; margin-bottom: 30px; margin-top: 50px; line-height: normal;
 
 .note_success {color:#449d44; margin-top:10px;}
 
+
+
+
+
+
+/* trash */
+
+
+.box1 { width: 100%; background-color: #fff; margin-bottom: 20px;
+    border-top-left-radius: 5px; border-top-right-radius: 5px;
+
+    li { list-style: none; padding: 10px 10px; }
+}
+
+.box1_title { color: #fff; background-color: #385A7A;
+    background-image: url(img/box_head.png); background-repeat: no-repeat; background-size: contain; background-position: right;
+    border-top-left-radius: 5px; border-top-right-radius: 5px;  }
+
+.box1_table { display: table; color: #2F4052; background-color: #fff; width: 100%; border-collapse: collapse; border-width: 2px; border-style: solid; border-color: #fff;
+    ul:nth-child(even){background-color: #F2F0EB}
+    ul { display: table-row;
+         li {display: table-cell; list-style: none; vertical-align: middle; text-align: left; }
+    }
+}
+
+.box1_width { width: 30%;}
+
+.table2 { @extend .box1_table; font-size: 14px;
+    li { border-width: 1px; border-color: #c3cace; border-style: solid; padding: 9px 9px; }
+}
+.table2_title li { font-weight: bold; padding: 15px 10px;}
+
+.note1 { font-size: 12px; color: #666666; margin-top: 3px;}
+.note1_red { color: #FF543F;}
+.note1_suc { color: #41992E;}
+
+.note2 { font-size: 12px; margin-top: 2px; }
+.note2_error { @extend .note2; color: #FF543F; }
+
+.box1 input, .box1_selectmenu { width: 97%;}
+
+.table_but { display: block; width: 25px; height: 25px; background-repeat: no-repeat; background-size: 70%; background-position: center; left: 0; right: 0; margin: auto;
+   &:hover { background-size: 75%; }
+}
+.table_but_edit { @extend .table_but; background-size: 90%; background-image: url(img/table_edit.png); }
+.table_but_trash { @extend .table_but; background-image: url(img/table_trash.png); }
+
+.chek { display: block; width: 17px; height: 17px; background-repeat: no-repeat; background-size: contain; padding-left: 3px; text-align: center; }
+.chek1 { @extend .chek; background-image: url(img/chek1.png)}
+.chek2 { @extend .chek; background-image: url(img/chek2.png)}
+
+.box_cont {padding: 0;}
+
+.qtyall { width: 100px; }
+
+.table2 li .qty  { float: left; font-weight: bold;
+    width: 35px; height: 27px; margin: 0px 1px; border: 1px #c3cace solid;
+    text-align: center;
+}
+
+.but_qty { display: inline-block; float: left; color: #fff; background-color: #2D547D; width:27px; height:27px; background-size: contain; background-repeat: no-repeat; transition: all 0.3s ease 0s;
+    &:hover{background-color: #2288C7;}}
+.qtyplus { @extend .but_qty; background-image: url(img/qtyplus.png) }
+.qtyminus { @extend .but_qty; background-image: url(img/qtyminus.png); background-position: top 1px center;}
+
+.trash_foot {@extend .box_cont; border-top: 1px #c3cace solid; font-size: 16px; padding-top: 10px;}
+
+/* /trash */
 
 
 
