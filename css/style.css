@@ -277,6 +277,9 @@ p {
   padding: 10px 20px;
   transition: all 0.3s ease 0s; }
 
+.pagination a {
+  transition: all 0.3s ease 0s; }
+
 /* /elements */
 /* page index */
 .ind_block_section, .ind_block_uslugi {
@@ -445,6 +448,24 @@ p {
   padding-top: 70px; }
 
 /* page /about */
+/* page news */
+.news1 {
+  display: block;
+  color: #0366A6;
+  border-bottom: 1px #c8dcea solid;
+  padding: 25px 20px; }
+  .news1 span {
+    font-size: 11px;
+    background-color: #2288C7;
+    padding: 2px 8px;
+    color: #fff;
+    border-radius: 2px; }
+  .news1 p {
+    display: block;
+    margin: 3px 0;
+    font-size: 24px; }
+
+/* /page news */
 @media (max-width: 1200px) {
   .logo {
     width: 325px;

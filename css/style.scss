@@ -169,6 +169,8 @@ p{margin: 15px 0;}
 
 .btn {font-size: 20px; padding: 10px 20px; transition: all 0.3s ease 0s;}
 
+.pagination a { transition: all 0.3s ease 0s; }
+
 /* /elements */
 
 
@@ -240,6 +242,18 @@ p{margin: 15px 0;}
 .about_etsp_text { padding-bottom: 120px; padding-top: 70px;}
 
 /* page /about */
+
+
+
+
+/* page news */
+
+.news1 { display:block; color: #0366A6; border-bottom:1px #c8dcea solid; padding: 25px 20px;
+         span{font-size:11px; background-color:#2288C7; padding:2px 8px; color:#fff; border-radius:2px;}
+         p{display:block; margin: 3px 0; font-size:24px;}
+}
+
+/* /page news */
 
 
 
