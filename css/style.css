@@ -577,27 +577,32 @@ p {
   color: #fff;
   background-color: #0078C3;
   padding: 5px 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-top: 10px; }
 
-.blank_radiobut, .blank_radiobut_act {
+.blank_radiobut, .blank_chek[type="radio"]:checked ~ .blank_radiobut {
   display: table;
   font-size: 18px;
   padding: 0 20px 0 20px;
   border: 1px #B5B5B5 solid;
   min-height: 115px;
   width: 100%;
-  margin: 5px 0; }
-  .blank_radiobut:hover, .blank_radiobut_act:hover {
+  margin: 5px 0;
+  font-weight: 100; }
+  .blank_radiobut:hover, .blank_chek[type="radio"]:checked ~ .blank_radiobut:hover {
     border: 5px #0078C3 solid; }
-  .blank_radiobut span, .blank_radiobut_act span {
+  .blank_radiobut span, .blank_chek[type="radio"]:checked ~ .blank_radiobut span {
     display: table-cell;
     vertical-align: middle; }
 
-.blank_radiobut_act {
+.blank_chek {
+  display: none; }
+
+.blank_chek[type="radio"]:checked ~ .blank_radiobut {
   border: 5px #0078C3 solid;
   background: url(img/pages_images/ridiobut_act.png) 12px 15px no-repeat;
-  padding: 0 20px 0 90px; }
+  padding: 0 20px 0 90px;
+  font-weight: bold; }
 
 .blank_num {
   font-size: 24px;

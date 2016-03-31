@@ -304,13 +304,16 @@ p{margin: 15px 0;}
 
 /* page blank order */
 
-.blank_radiobut_top { color: #fff; background-color: #0078C3; padding: 5px 10px; margin-bottom: 30px; margin-top: 10px;}
+.blank_radiobut_top { color: #fff; background-color: #0078C3; padding: 5px 10px; margin-bottom: 20px; margin-top: 10px;}
 
-.blank_radiobut {display: table; font-size: 18px; padding: 0 20px 0 20px; border: 1px #B5B5B5 solid; min-height: 115px; width: 100%; margin: 5px 0;
+.blank_radiobut {display: table; font-size: 18px; padding: 0 20px 0 20px; border: 1px #B5B5B5 solid; min-height: 115px; width: 100%; margin: 5px 0; font-weight: 100;
     &:hover  {border: 5px #0078C3 solid;}
     span {display: table-cell; vertical-align: middle; }}
 
-.blank_radiobut_act { @extend .blank_radiobut; border: 5px #0078C3 solid; background: url(img/pages_images/ridiobut_act.png) 12px 15px no-repeat;  padding: 0 20px 0 90px; }
+.blank_chek {display: none;}
+
+.blank_chek[type="radio"]:checked ~ .blank_radiobut { @extend .blank_radiobut; border: 5px #0078C3 solid; background: url(img/pages_images/ridiobut_act.png) 12px 15px no-repeat;  padding: 0 20px 0 90px; font-weight: bold;}
+
 
 .blank_num {font-size: 24px; margin: 15px 0; color: #000;
     input{width: 100px; border-radius: 3px; border: 2px #cccccc solid; font-size: 26px; padding: 3px;}
