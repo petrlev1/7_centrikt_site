@@ -674,6 +674,12 @@ p {
   padding-top: 70px; }
 
 /* page /about */
+/* page uslugi */
+.uslugi a {
+  display: block;
+  margin-bottom: 15px; }
+
+/* /page uslugi */
 /* page news */
 .news1 {
   display: block;
