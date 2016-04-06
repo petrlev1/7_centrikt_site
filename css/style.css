@@ -84,6 +84,26 @@ nav {
     nav a:hover {
       color: #6EC9EF; }
 
+.adapt_but {
+  position: absolute;
+  display: none;
+  width: 43px;
+  height: 43px;
+  top: 2px;
+  left: 6px;
+  background: url(img/adapt_but.png) top left no-repeat;
+  background-size: contain;
+  z-index: 99;
+  border-radius: 5px; }
+  .adapt_but:hover {
+    background-color: #4db8e5; }
+
+.adapt_but_chek[type="checkbox"]:checked ~ nav {
+  display: block; }
+
+.adapt_but_chek {
+  display: none; }
+
 .menu_item {
   background: url(img/item_arrow.png) no-repeat;
   background-position: right 5px top 26px; }
@@ -797,20 +817,22 @@ p {
     padding-top: 0; } }
 @media (max-width: 768px) {
   .head_line {
-    display: block; }
+    display: block;
+    left: 0;
+    width: 100%; }
 
   .head_cont {
     top: -1px; }
 
   .head {
     padding-bottom: 0;
-    height: 145px; }
+    height: 49px; }
 
   .logo {
     position: absolute;
-    width: 150px;
+    width: 143px;
     top: 0;
-    left: 5px;
+    left: 70px;
     background-color: #fff; }
 
   .head_cont {
@@ -820,10 +842,18 @@ p {
     display: none; }
 
   nav {
-    display: block;
-    top: 50px; }
+    display: none;
+    top: 50px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); }
     nav a {
-      padding: 4px 10px; }
+      padding: 8px 10px;
+      margin: 15px 0;
+      display: block;
+      font-size: 18px; }
+
+  .adapt_but {
+    display: block; }
 
   .navtree {
     display: none; }
