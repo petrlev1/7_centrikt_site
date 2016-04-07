@@ -29,7 +29,7 @@ a{text-decoration: none; border-style: none; transition: color 0.3s ease 0s; col
 }
 
 
-nav{ position: absolute; top: 47px; text-align: left; width: 1170px; left: 0; right: 0; margin: auto; text-align: right; z-index: 2; padding: 5px 0;
+nav{ position: absolute; top: 47px; text-align: left; width: 1170px; left: 0; right: 0; margin: auto; text-align: right; z-index: 99; padding: 5px 0;
     
      &:hover .submenu{display: block;}
     
@@ -39,12 +39,8 @@ nav{ position: absolute; top: 47px; text-align: left; width: 1170px; left: 0; ri
        
 }
 
-.adapt_but {position: absolute; display: none; width: 43px; height: 43px; top:2px; left:6px; background: url(img/adapt_but.png) top left no-repeat; background-size: contain; z-index: 99; border-radius: 5px;
-&:hover{background-color: #4db8e5;}
-}
-
-.adapt_but_chek[type="checkbox"]:checked ~ nav {display: block;}
-
+.adapt_but_label {display: none;}
+.adapt_but {display: none;}
 .adapt_but_chek {display: none;}
 
 .menu_item { background: url(img/item_arrow.png) no-repeat; background-position: right 5px top 26px;}
@@ -63,7 +59,7 @@ nav{ position: absolute; top: 47px; text-align: left; width: 1170px; left: 0; ri
 
 
 .submenu_item {
-    &:hover > .submenu {
+    &:hover > .submenu { 
     max-height: 600px;
     transition: max-height 0.25s ease-in;}
 }
@@ -372,6 +368,27 @@ p{margin: 15px 0;}
 
 
 
+/* files */
+
+.files_cell_align {text-align: right; min-width: 190px; }
+
+.btn_files { @extend .btn; display: inline-block; padding: 7px 9px; margin: 1px 2px; font-size: 16px; border-radius: 5px;}
+
+.table_files { @extend .blank_table; 
+    li{vertical-align: middle; padding: 5px 10px;}
+.table_files_titile { color: #fff; font-weight: bold; background-color: #0078C3; background: linear-gradient(to top, #0078C3, #0078C3); }}
+
+.files_cell1 {width: 1px;}
+
+
+/* /files */
+
+
+
+
+
+
+
 /* page news */
 
 .news1 { display:block; color: #0366A6; border-bottom:1px #c8dcea solid; padding: 25px 20px;
@@ -488,15 +505,28 @@ nav{ text-align: center; width: 100%; top: 130px;
     
 .contacts_up {display: none;}
     
-nav { display: none; top: 50px; background-color: #fff; box-shadow: 0 10px 10px rgba(0,0,0,0.2); 
+nav { display: block; top: 50px; background-color: #fff; box-shadow: 0 10px 10px rgba(0,0,0,0.2);  padding: 0 0; max-height: 0; overflow: hidden; transition: max-height 0.3s ease 0s;
     a {padding: 8px 10px; margin: 15px 0; display: block; font-size: 18px;}}
 
-.adapt_but {display:block;}
+    
+    .adapt_but { display: block; width: 43px; height: 43px; top:2px; left:6px; background: url(img/adapt_but.png) top left no-repeat; background-size: contain; border-radius: 5px;
+&:hover{background-color: #4db8e5; cursor: pointer;}
+}
+
+.adapt_but_label { position: absolute; display: block; width: 43px; height: 43px; top:2px; left:6px; z-index: 1;}
+
+.adapt_but_chek[type="checkbox"]:checked ~ nav { max-height: 500px; transition: max-height 0.5s ease 0s;}
+
+.adapt_but_chek[type="checkbox"]:checked ~ .adapt_but_label { position: fixed; width: 100%; height: 100%; background-color: rgba(0, 120, 201, 0.7); }
+
+.adapt_but_chek {display: none;}
     
     .navtree { display: none;}
     
     .ind_pic { display: none; }
     
     .ind_block_oborud {width: 100%;}
+    
+    .files_cell_align {text-align: right; min-width: 0; }
     
 }
