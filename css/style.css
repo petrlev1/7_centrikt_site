@@ -520,7 +520,8 @@ p {
     display: block; }
 
 .block_news1 {
-  margin: 0 10px 20px 0; }
+  margin: 0 5px;
+  font-size: 14px; }
 
 .news_pic {
   width: 100%;
