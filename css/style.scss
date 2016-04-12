@@ -274,10 +274,11 @@ p{margin: 15px 0;}
 
 .ind_pic_text { position: absolute; right: 9%; top: 60px; color: #0478C3; font-size: 36px;}
 
-.index_news { position: absolute; width: 270px; right: 5%; top: 225px;
-    a {display: block;}
+.index_new { position: absolute; top: 230px; right: 45px; text-align:right; width:49%;}
+
+.index_news_text {position: relative; width: 50%; display: inline-block;text-align: center;
     &:before { @extend .index_news_quotes; content: ""; left: -42px; bottom: -10px; background: url(img/index/que1.png) center no-repeat;}
-    &:after {@extend .index_news_quotes; content: ""; right: -25px; top: -10px; background: url(img/index/que2.png) center no-repeat;}
+    &:after {@extend .index_news_quotes; content: ""; right: -35px; top: -10px; background: url(img/index/que2.png) center no-repeat;}
 }
 .index_news_quotes { position: absolute; width: 30px; height: 30px; font-size: 50px; color: #3B8EC3; }
 
@@ -441,7 +442,7 @@ p{margin: 15px 0;}
     
     .about_testern1_text { margin: 100px 0 100px 45%;}
     
-    .index_news { position: absolute; width: 270px; right: 0; top: 225px;}
+    .ind_pic_text { position: absolute; right: 4%; top: 60px; color: #0478C3; font-size: 36px;}
     
 }
 
@@ -487,7 +488,7 @@ nav{ text-align: center; width: 100%; top: 130px;
     
     .ind_pic_text { position: absolute; right: 0; top: 60px; color: #0478C3; font-size: 33px;}
     
-    .index_news { position: absolute; width: 180px; right: 0; top: 225px;}
+    .index_new {display: none;}
     
 }
 
