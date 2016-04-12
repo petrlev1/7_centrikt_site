@@ -223,6 +223,6 @@
  */
 
 
-.owl-nav { text-align: center; margin-top: 15px;}
-.owl-nav span {margin: 0 10px; color: #2185C5;}
+.owl-nav { text-align: center; margin-top: 15px; font-size: 14px; font-weight: bold;}
+.owl-nav span {margin: 0 10px; color: #2185C5; padding: 10px;}
 .owl-nav span:hover { color: #4db8e5;}

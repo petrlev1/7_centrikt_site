@@ -477,16 +477,45 @@ p {
 .ind_pic {
   width: 100%;
   height: 426px;
-  background-color: #F5F6F7;
-  background-image: url(img/ind_pic.png);
+  background: #F5FCFF;
+  background-image: url(img/ind_pic.png), linear-gradient(to top, #ffffff, #EBF8FF);
   background-repeat: no-repeat;
-  background-position: center bottom; }
+  background-position: center bottom;
+  border-bottom: 1px #b9d6ea solid; }
   .ind_pic .container {
     position: relative; }
 
 .ind_pic_text {
+  position: absolute;
+  right: 9%;
+  top: 60px;
   color: #0478C3;
-  font-size: 33px; }
+  font-size: 36px; }
+
+.index_news {
+  position: absolute;
+  width: 270px;
+  right: 5%;
+  top: 225px; }
+  .index_news a {
+    display: block; }
+  .index_news:before {
+    content: "";
+    left: -42px;
+    bottom: -10px;
+    background: url(img/index/que1.png) center no-repeat; }
+  .index_news:after {
+    content: "";
+    right: -25px;
+    top: -10px;
+    background: url(img/index/que2.png) center no-repeat; }
+
+.index_news_quotes, .index_news:before, .index_news:after {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  font-size: 50px;
+  color: #3B8EC3; }
 
 .ind_block {
   position: relative;
@@ -531,20 +560,6 @@ p {
   background-repeat: no-repeat;
   border: 1px #0A79BA solid;
   margin-bottom: 4px; }
-
-.btn_roznica {
-  position: absolute;
-  right: 10px;
-  bottom: -50px;
-  font-size: 19px; }
-  .btn_roznica a {
-    padding: 10px 10px;
-    border-bottom: 1px #6EC9EF solid;
-    border-radius: 10px;
-    background-color: #fff; }
-    .btn_roznica a:hover {
-      color: #fff;
-      background-color: #0478C3; }
 
 .ind_block_oborud {
   position: relative;
@@ -768,12 +783,14 @@ p {
   .menu_item {
     background-position: right -2px top 29px; }
 
-  .btn_roznica {
-    right: 0;
-    bottom: -35px; }
-
   .about_testern1_text {
-    margin: 100px 0 100px 45%; } }
+    margin: 100px 0 100px 45%; }
+
+  .index_news {
+    position: absolute;
+    width: 270px;
+    right: 0;
+    top: 225px; } }
 @media (max-width: 992px) {
   .head {
     padding-bottom: 65px;
@@ -814,10 +831,6 @@ p {
   h2 {
     font-size: 30px; }
 
-  .btn_roznica {
-    right: 0;
-    bottom: -40px; }
-
   .about_testern1_text {
     margin: 0 0 0 0; }
 
@@ -829,7 +842,20 @@ p {
 
   .about_etsp_text {
     padding-bottom: 0;
-    padding-top: 0; } }
+    padding-top: 0; }
+
+  .ind_pic_text {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    color: #0478C3;
+    font-size: 33px; }
+
+  .index_news {
+    position: absolute;
+    width: 180px;
+    right: 0;
+    top: 225px; } }
 @media (max-width: 768px) {
   .head_line {
     display: block;

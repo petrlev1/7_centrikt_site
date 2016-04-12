@@ -2700,7 +2700,7 @@
 	Navigation.Defaults = {
 		nav: false,
 		navRewind: true,
-		navText: [ '< назад', 'вперед >' ],
+		navText: [ '<<', '>>' ],
 		navSpeed: false,
 		navElement: 'span',
 		navContainer: false,
