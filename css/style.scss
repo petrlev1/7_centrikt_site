@@ -330,8 +330,8 @@ p{margin: 15px 0;}
 
 .blank_table { display: table; width: 100%;
     ul{display: table-row;}
-    li {display: table-cell; padding: 10px 20px;  background: linear-gradient(to top, #F5F6F7, #FAFBFC); border-top: 1px #dce9f2 solid; text-align: left; vertical-align: top;}
-    input{width: 100%;}
+    li {display: table-cell; padding: 10px 20px;  background: linear-gradient(to top, #F5F6F7, #FAFBFC); border-top: 1px #dce9f2 solid; text-align: left; vertical-align: middle;}
+    input{width: 100%; font-size: 17px;}
 }
 .blank_table_left {width: 25%;}
 .blank_table_note {font-size: 10px; color: #808080; line-height: normal; margin-top: 3px;}
@@ -416,6 +416,14 @@ p{margin: 15px 0;}
 }
 
 /* /page contacts */
+
+
+
+/* alcospot_egais */
+
+.icon1 { float: right; margin: 0 0 5px 30px; width: 201px; height: 206px; background-image: url(img/pages_images/icon1.png);}
+
+/* /alcospot_egais */
 
 
 

@@ -658,9 +658,10 @@ p {
     background: linear-gradient(to top, #F5F6F7, #FAFBFC);
     border-top: 1px #dce9f2 solid;
     text-align: left;
-    vertical-align: top; }
+    vertical-align: middle; }
   .blank_table input, .table_files input {
-    width: 100%; }
+    width: 100%;
+    font-size: 17px; }
 
 .blank_table_left {
   width: 25%; }
@@ -773,6 +774,15 @@ p {
     border-bottom: none; }
 
 /* /page contacts */
+/* alcospot_egais */
+.icon1 {
+  float: right;
+  margin: 0 0 5px 30px;
+  width: 201px;
+  height: 206px;
+  background-image: url(img/pages_images/icon1.png); }
+
+/* /alcospot_egais */
 @media (max-width: 1200px) {
   .logo {
     width: 325px;
