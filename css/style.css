@@ -70,7 +70,7 @@ nav {
   right: 0;
   margin: auto;
   text-align: right;
-  z-index: 2;
+  z-index: 99;
   padding: 5px 0; }
   nav:hover .submenu {
     display: block; }
@@ -83,6 +83,15 @@ nav {
     transition: color 0.3s ease 0s; }
     nav a:hover {
       color: #6EC9EF; }
+
+.adapt_but_label {
+  display: none; }
+
+.adapt_but {
+  display: none; }
+
+.adapt_but_chek {
+  display: none; }
 
 .menu_item {
   background: url(img/item_arrow.png) no-repeat;
@@ -382,7 +391,7 @@ h3 {
 
 /* /trash */
 /* elements */
-.btn {
+.btn, .btn_files {
   font-size: 20px;
   padding: 10px 20px;
   transition: all 0.3s ease 0s; }
@@ -468,16 +477,50 @@ p {
 .ind_pic {
   width: 100%;
   height: 426px;
-  background-color: #F5F6F7;
-  background-image: url(img/ind_pic.png);
+  background: #F5FCFF;
+  background-image: url(img/ind_pic.png), linear-gradient(to top, #ffffff, #EBF8FF);
   background-repeat: no-repeat;
-  background-position: center bottom; }
+  background-position: center bottom;
+  border-bottom: 1px #b9d6ea solid; }
   .ind_pic .container {
     position: relative; }
 
 .ind_pic_text {
+  position: absolute;
+  right: 9%;
+  top: 60px;
   color: #0478C3;
-  font-size: 33px; }
+  font-size: 36px; }
+
+.index_new {
+  position: absolute;
+  top: 230px;
+  right: 45px;
+  text-align: right;
+  width: 49%; }
+
+.index_news_text {
+  position: relative;
+  width: 50%;
+  display: inline-block;
+  text-align: center; }
+  .index_news_text:before {
+    content: "";
+    left: -42px;
+    bottom: -10px;
+    background: url(img/index/que1.png) center no-repeat; }
+  .index_news_text:after {
+    content: "";
+    right: -35px;
+    top: -10px;
+    background: url(img/index/que2.png) center no-repeat; }
+
+.index_news_quotes, .index_news_text:before, .index_news_text:after {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  font-size: 50px;
+  color: #3B8EC3; }
 
 .ind_block {
   position: relative;
@@ -511,7 +554,8 @@ p {
     display: block; }
 
 .block_news1 {
-  margin: 0 10px 20px 0; }
+  margin: 0 5px;
+  font-size: 14px; }
 
 .news_pic {
   width: 100%;
@@ -521,20 +565,6 @@ p {
   background-repeat: no-repeat;
   border: 1px #0A79BA solid;
   margin-bottom: 4px; }
-
-.btn_roznica {
-  position: absolute;
-  right: 10px;
-  bottom: -50px;
-  font-size: 19px; }
-  .btn_roznica a {
-    padding: 10px 10px;
-    border-bottom: 1px #6EC9EF solid;
-    border-radius: 10px;
-    background-color: #fff; }
-    .btn_roznica a:hover {
-      color: #fff;
-      background-color: #0478C3; }
 
 .ind_block_oborud {
   position: relative;
@@ -617,20 +647,21 @@ p {
     font-size: 26px;
     padding: 3px; }
 
-.blank_table {
+.blank_table, .table_files {
   display: table;
   width: 100%; }
-  .blank_table ul {
+  .blank_table ul, .table_files ul {
     display: table-row; }
-  .blank_table li {
+  .blank_table li, .table_files li {
     display: table-cell;
     padding: 10px 20px;
     background: linear-gradient(to top, #F5F6F7, #FAFBFC);
     border-top: 1px #dce9f2 solid;
     text-align: left;
-    vertical-align: top; }
-  .blank_table input {
-    width: 100%; }
+    vertical-align: middle; }
+  .blank_table input, .table_files input {
+    width: 100%;
+    font-size: 17px; }
 
 .blank_table_left {
   width: 25%; }
@@ -674,6 +705,37 @@ p {
   padding-top: 70px; }
 
 /* page /about */
+/* page uslugi */
+.uslugi a {
+  display: block;
+  margin-bottom: 15px; }
+
+/* /page uslugi */
+/* files */
+.files_cell_align {
+  text-align: right;
+  min-width: 190px; }
+
+.btn_files {
+  display: inline-block;
+  padding: 7px 9px;
+  margin: 1px 2px;
+  font-size: 16px;
+  border-radius: 5px; }
+
+.table_files li {
+  vertical-align: middle;
+  padding: 5px 10px; }
+.table_files .table_files_titile {
+  color: #fff;
+  font-weight: bold;
+  background-color: #0078C3;
+  background: linear-gradient(to top, #0078C3, #0078C3); }
+
+.files_cell1 {
+  width: 1px; }
+
+/* /files */
 /* page news */
 .news1 {
   display: block;
@@ -712,6 +774,15 @@ p {
     border-bottom: none; }
 
 /* /page contacts */
+/* alcospot_egais */
+.icon1 {
+  float: right;
+  margin: 0 0 5px 30px;
+  width: 201px;
+  height: 206px;
+  background-image: url(img/pages_images/icon1.png); }
+
+/* /alcospot_egais */
 @media (max-width: 1200px) {
   .logo {
     width: 325px;
@@ -727,12 +798,15 @@ p {
   .menu_item {
     background-position: right -2px top 29px; }
 
-  .btn_roznica {
-    right: 0;
-    bottom: -35px; }
-
   .about_testern1_text {
-    margin: 100px 0 100px 45%; } }
+    margin: 100px 0 100px 45%; }
+
+  .ind_pic_text {
+    position: absolute;
+    right: 4%;
+    top: 60px;
+    color: #0478C3;
+    font-size: 36px; } }
 @media (max-width: 992px) {
   .head {
     padding-bottom: 65px;
@@ -773,10 +847,6 @@ p {
   h2 {
     font-size: 30px; }
 
-  .btn_roznica {
-    right: 0;
-    bottom: -40px; }
-
   .about_testern1_text {
     margin: 0 0 0 0; }
 
@@ -788,23 +858,35 @@ p {
 
   .about_etsp_text {
     padding-bottom: 0;
-    padding-top: 0; } }
+    padding-top: 0; }
+
+  .ind_pic_text {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    color: #0478C3;
+    font-size: 33px; }
+
+  .index_new {
+    display: none; } }
 @media (max-width: 768px) {
   .head_line {
-    display: block; }
+    display: block;
+    left: 0;
+    width: 100%; }
 
   .head_cont {
     top: -1px; }
 
   .head {
     padding-bottom: 0;
-    height: 145px; }
+    height: 49px; }
 
   .logo {
     position: absolute;
-    width: 150px;
+    width: 143px;
     top: 0;
-    left: 5px;
+    left: 70px;
     background-color: #fff; }
 
   .head_cont {
@@ -815,9 +897,53 @@ p {
 
   nav {
     display: block;
-    top: 50px; }
+    top: 50px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 0 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease 0s; }
     nav a {
-      padding: 4px 10px; }
+      padding: 8px 10px;
+      margin: 15px 0;
+      display: block;
+      font-size: 18px; }
+
+  .adapt_but {
+    display: block;
+    width: 43px;
+    height: 43px;
+    top: 2px;
+    left: 6px;
+    background: url(img/adapt_but.png) top left no-repeat;
+    background-size: contain;
+    border-radius: 5px; }
+    .adapt_but:hover {
+      background-color: #4db8e5;
+      cursor: pointer; }
+
+  .adapt_but_label {
+    position: absolute;
+    display: block;
+    width: 43px;
+    height: 43px;
+    top: 2px;
+    left: 6px;
+    z-index: 1; }
+
+  .adapt_but_chek[type="checkbox"]:checked ~ nav {
+    max-height: 500px;
+    transition: max-height 0.5s ease 0s; }
+
+  .adapt_but_chek[type="checkbox"]:checked ~ .adapt_but_label {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 120, 201, 0.7); }
+
+  .adapt_but_chek {
+    display: none; }
 
   .navtree {
     display: none; }
@@ -826,6 +952,10 @@ p {
     display: none; }
 
   .ind_block_oborud {
-    width: 100%; } }
+    width: 100%; }
+
+  .files_cell_align {
+    text-align: right;
+    min-width: 0; } }
 
 /*# sourceMappingURL=style.css.map */

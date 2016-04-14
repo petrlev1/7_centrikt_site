@@ -29,7 +29,7 @@ a{text-decoration: none; border-style: none; transition: color 0.3s ease 0s; col
 }
 
 
-nav{ position: absolute; top: 47px; text-align: left; width: 1170px; left: 0; right: 0; margin: auto; text-align: right; z-index: 2; padding: 5px 0;
+nav{ position: absolute; top: 47px; text-align: left; width: 1170px; left: 0; right: 0; margin: auto; text-align: right; z-index: 99; padding: 5px 0;
     
      &:hover .submenu{display: block;}
     
@@ -38,6 +38,10 @@ nav{ position: absolute; top: 47px; text-align: left; width: 1170px; left: 0; ri
         }
        
 }
+
+.adapt_but_label {display: none;}
+.adapt_but {display: none;}
+.adapt_but_chek {display: none;}
 
 .menu_item { background: url(img/item_arrow.png) no-repeat; background-position: right 5px top 26px;}
 
@@ -117,6 +121,7 @@ h2 { color: #0366A6; font-size: 50px; margin: 20px 0 30px 0;}
 h3 {font-size: 24px; margin-bottom: 30px; margin-top: 50px; line-height: normal;}
 
 .note_success {color:#449d44; margin-top:10px;}
+
 
 
 
@@ -264,10 +269,18 @@ p{margin: 15px 0;}
 
 .ind_h2 { margin-bottom: 50px;}
 
-.ind_pic { width: 100%; height: 426px; background-color: #F5F6F7; background-image: url(img/ind_pic.png); background-repeat: no-repeat; background-position: center bottom;
+.ind_pic { width: 100%; height: 426px; background: #F5FCFF; background-image: url(img/ind_pic.png), linear-gradient(to top, #ffffff, #EBF8FF); background-repeat: no-repeat; background-position: center bottom; border-bottom: 1px #b9d6ea solid;
     .container{position: relative;}}
 
-.ind_pic_text { color: #0478C3; font-size: 33px;}
+.ind_pic_text { position: absolute; right: 9%; top: 60px; color: #0478C3; font-size: 36px;}
+
+.index_new { position: absolute; top: 230px; right: 45px; text-align:right; width:49%;}
+
+.index_news_text {position: relative; width: 50%; display: inline-block;text-align: center;
+    &:before { @extend .index_news_quotes; content: ""; left: -42px; bottom: -10px; background: url(img/index/que1.png) center no-repeat;}
+    &:after {@extend .index_news_quotes; content: ""; right: -35px; top: -10px; background: url(img/index/que2.png) center no-repeat;}
+}
+.index_news_quotes { position: absolute; width: 30px; height: 30px; font-size: 50px; color: #3B8EC3; }
 
 .ind_block { position: relative; margin: 10px 20px 40px 20px; min-height: 220px;
     img {width: 150px; position: relative; z-index: 1; transition: all 0.3s ease 0s;}
@@ -281,13 +294,9 @@ p{margin: 15px 0;}
 .block_news { @extend .in_cont; font-size: 14px; line-height: normal;
     a{display: block;}}
 
-.block_news1 { margin: 0 10px 20px 0;}
+.block_news1 { margin: 0 5px; font-size: 14px;}
 
 .news_pic {width: 100%; height: 100px; background-color: #fff; background-position: center; background-repeat: no-repeat; border: 1px #0A79BA solid; margin-bottom: 4px;}
-
-.btn_roznica {position:absolute; right: 10px; bottom: -50px; font-size: 19px;
-    a{padding: 10px 10px; border-bottom: 1px #6EC9EF solid; border-radius: 10px; background-color: #fff;
-        &:hover{color: #fff; background-color: #0478C3; }}}
 
 .ind_block_oborud { position: relative; color: #2188C8; display: block; width: 390px; min-height: 250px; background: top center no-repeat; background-size: 390px; border: 1px #F0F1F2 solid; border-radius: 5px; transition: all 0.3s ease 0s; left: 0; right: 0; margin: auto; margin-bottom: 50px;
     p {display: block; background: url(img/index/ind_oborud1_shad.png) top center no-repeat; margin-top: 200px; padding: 37px 0 0 0; font-size: 18px;}
@@ -321,8 +330,8 @@ p{margin: 15px 0;}
 
 .blank_table { display: table; width: 100%;
     ul{display: table-row;}
-    li {display: table-cell; padding: 10px 20px;  background: linear-gradient(to top, #F5F6F7, #FAFBFC); border-top: 1px #dce9f2 solid; text-align: left; vertical-align: top;}
-    input{width: 100%;}
+    li {display: table-cell; padding: 10px 20px;  background: linear-gradient(to top, #F5F6F7, #FAFBFC); border-top: 1px #dce9f2 solid; text-align: left; vertical-align: middle;}
+    input{width: 100%; font-size: 17px;}
 }
 .blank_table_left {width: 25%;}
 .blank_table_note {font-size: 10px; color: #808080; line-height: normal; margin-top: 3px;}
@@ -346,6 +355,40 @@ p{margin: 15px 0;}
 .about_etsp_text { padding-bottom: 120px; padding-top: 70px;}
 
 /* page /about */
+
+
+
+
+
+
+/* page uslugi */
+
+.uslugi a {display: block; margin-bottom: 15px;}
+
+/* /page uslugi */
+
+
+
+
+
+
+/* files */
+
+.files_cell_align {text-align: right; min-width: 190px; }
+
+.btn_files { @extend .btn; display: inline-block; padding: 7px 9px; margin: 1px 2px; font-size: 16px; border-radius: 5px;}
+
+.table_files { @extend .blank_table;
+    li{vertical-align: middle; padding: 5px 10px;}
+.table_files_titile { color: #fff; font-weight: bold; background-color: #0078C3; background: linear-gradient(to top, #0078C3, #0078C3); }}
+
+.files_cell1 {width: 1px;}
+
+
+/* /files */
+
+
+
 
 
 
@@ -376,6 +419,14 @@ p{margin: 15px 0;}
 
 
 
+/* alcospot_egais */
+
+.icon1 { float: right; margin: 0 0 5px 30px; width: 201px; height: 206px; background-image: url(img/pages_images/icon1.png);}
+
+/* /alcospot_egais */
+
+
+
 
 
 
@@ -396,11 +447,11 @@ p{margin: 15px 0;}
     }
     
     .menu_item { background-position: right -2px top 29px;}
-    
-    .btn_roznica { right: 0; bottom: -35px; }
-    
+
     .about_testern1_text { margin: 100px 0 100px 45%;}
     
+    .ind_pic_text { position: absolute; right: 4%; top: 60px; color: #0478C3; font-size: 36px;}
+
 }
 
 
@@ -435,9 +486,7 @@ nav{ text-align: center; width: 100%; top: 130px;
     .foot_block {text-align: center;}
     
     h2 {font-size: 30px;}
-    
-    .btn_roznica { right: 0; bottom: -40px; }
-    
+
     
     .about_testern1_text { margin: 0 0 0 0;}
     .about_testern1_img { display: none;}
@@ -445,6 +494,10 @@ nav{ text-align: center; width: 100%; top: 130px;
     .about_etsp_img { display: none;}
     .about_etsp_text { padding-bottom: 0; padding-top: 0;}
     
+    .ind_pic_text { position: absolute; right: 0; top: 60px; color: #0478C3; font-size: 33px;}
+
+    .index_new {display: none;}
+
 }
 
 
@@ -454,20 +507,33 @@ nav{ text-align: center; width: 100%; top: 130px;
 
 @media (max-width: 768px) {
     
-    .head_line { display: block;}
+    .head_line { display: block; left:0; width:100%;}
     
     .head_cont {top: -1px;}
     
-    .head {padding-bottom: 0; height: 145px;}
+    .head {padding-bottom: 0; height: 49px;}
 
-.logo {position: absolute; width: 150px; top:0; left: 5px; background-color: #fff;}
+.logo {position: absolute; width: 143px; top:0; left: 70px; background-color: #fff;}
     
     .head_cont {height: 48px;}
     
 .contacts_up {display: none;}
     
-nav { display: block; top: 50px;
-    a {padding: 4px 10px;}}
+nav { display: block; top: 50px; background-color: #fff; box-shadow: 0 10px 10px rgba(0,0,0,0.2);  padding: 0 0; max-height: 0; overflow: hidden; transition: max-height 0.3s ease 0s;
+    a {padding: 8px 10px; margin: 15px 0; display: block; font-size: 18px;}}
+
+
+    .adapt_but { display: block; width: 43px; height: 43px; top:2px; left:6px; background: url(img/adapt_but.png) top left no-repeat; background-size: contain; border-radius: 5px;
+&:hover{background-color: #4db8e5; cursor: pointer;}
+}
+
+.adapt_but_label { position: absolute; display: block; width: 43px; height: 43px; top:2px; left:6px; z-index: 1;}
+
+.adapt_but_chek[type="checkbox"]:checked ~ nav { max-height: 500px; transition: max-height 0.5s ease 0s;}
+
+.adapt_but_chek[type="checkbox"]:checked ~ .adapt_but_label { position: fixed; width: 100%; height: 100%; background-color: rgba(0, 120, 201, 0.7); }
+
+.adapt_but_chek {display: none;}
     
     .navtree { display: none;}
     
@@ -475,4 +541,6 @@ nav { display: block; top: 50px;
     
     .ind_block_oborud {width: 100%;}
     
+    .files_cell_align {text-align: right; min-width: 0; }
+
 }
