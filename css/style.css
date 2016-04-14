@@ -179,7 +179,7 @@ nav {
   height: 14px;
   background: url(img/navtree_arrow.png) no-repeat;
   background-position: top 1px right -3px;
-  margin: 0; }
+  margin: 0 5px; }
 
 .footer {
   background-color: #004B78;
