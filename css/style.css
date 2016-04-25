@@ -473,6 +473,25 @@ p {
     margin: auto;
     background-color: rgba(245, 246, 247, 0.95); }
 
+.text_catalog {
+  display: table;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px #c0ddf0 solid;
+  min-height: 130px; }
+  .text_catalog a {
+    display: table-cell;
+    vertical-align: middle; }
+  .text_catalog:hover {
+    box-shadow: 0 8px 30px rgba(4, 120, 192, 0.2); }
+  .text_catalog h3 {
+    font-size: 21px;
+    line-height: 27px;
+    padding: 0;
+    margin: 0; }
+
 /* /in_page */
 /* page index */
 .ind_block_section, .ind_block_uslugi {
