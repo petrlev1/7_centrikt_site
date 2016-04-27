@@ -79,10 +79,13 @@ nav {
     font-size: 16px;
     white-space: nowrap;
     color: #2185C5;
-    padding: 20px 26px 25px 26px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 5px 0 5px;
     transition: color 0.3s ease 0s; }
     nav a:hover {
       color: #6EC9EF; }
+  nav .navactive {
+    color: #6EC9EF; }
 
 .adapt_but_label {
   display: none; }
@@ -95,10 +98,13 @@ nav {
 
 .menu_item {
   background: url(img/item_arrow.png) no-repeat;
-  background-position: right 5px top 26px; }
+  background-position: right 0 top 17px; }
+  .menu_item:hover {
+    padding-bottom: 50px; }
 
 .submenu {
   display: none;
+  top: 73px;
   position: absolute;
   width: 100%;
   background-color: #DCF1FA;
@@ -394,7 +400,8 @@ h3 {
 .btn, .btn_files {
   font-size: 20px;
   padding: 10px 20px;
-  transition: all 0.3s ease 0s; }
+  transition: all 0.3s ease 0s;
+  width: auto !important; }
 
 .pagination a {
   transition: all 0.3s ease 0s; }
@@ -863,11 +870,12 @@ p {
     width: 970px;
     top: 47px; }
     nav a {
-      padding: 23px 15px;
+      padding: 10px 14px 10px 14px;
+      margin: 10px 0 0 0;
       font-size: 15px; }
 
   .menu_item {
-    background-position: right -2px top 29px; }
+    background-position: right 0 top 16px; }
 
   .about_etsp_img {
     width: 35%;
@@ -903,12 +911,14 @@ p {
   nav {
     text-align: center;
     width: 100%;
-    top: 130px; }
+    top: 125px; }
     nav a {
-      padding: 15px 20px; }
+      padding: 10px 20px; }
 
   .menu_item {
     background: none; }
+    .menu_item:hover {
+      padding-bottom: 0; }
 
   .submenu_item:hover > .submenu {
     display: none; }
@@ -958,14 +968,15 @@ p {
 
   .head {
     padding-bottom: 0;
-    height: 49px; }
+    height: 100px;
+    border-bottom: 1px #fff solid; }
 
   .logo {
     position: absolute;
     display: block;
     width: 143px;
     top: 0;
-    left: 70px;
+    left: 0;
     background-color: #fff;
     z-index: 99; }
 
@@ -976,19 +987,16 @@ p {
     display: none; }
 
   nav {
-    display: block;
     top: 50px;
     background-color: #fff;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    padding: 0 0;
-    max-height: 0;
+    padding: 10px 0;
     overflow: hidden;
-    transition: max-height 0.3s ease 0s; }
+    transition: max-height 0.3s ease 0s;
+    border-bottom: 1px #c0ddf0 solid; }
     nav a {
-      padding: 8px 10px;
-      margin: 15px 0;
-      display: block;
-      font-size: 18px; }
+      padding: 2px;
+      margin: 3px 6px;
+      font-size: 14px; }
 
   .adapt_but {
     position: absolute;
@@ -1055,6 +1063,9 @@ p {
     font-size: 18px;
     margin: 0 0;
     padding: 0 10px; } }
+@media (max-width: 350px) {
+  nav {
+    padding: 2px 0; } }
 /* sourceMappingURL=style.css.map */
 .custom-btn-bootstrap {
   background-color: #006399 !important;
