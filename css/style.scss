@@ -33,7 +33,7 @@ nav{ position: absolute; top: 47px; text-align: left; width: 1170px; left: 0; ri
     
      &:hover .submenu{display: block;}
     
-    a { display: inline-block; font-size: 16px; white-space: nowrap; color: #2185C5; padding: 10px 20px 10px 20px; margin: 10px 5px 0 5px; transition: color 0.3s ease 0s; 
+    a { display: inline-block; font-size: 16px; white-space: nowrap; color: #2185C5; padding: 10px 20px 10px 20px; margin: 10px 4px 0 5px; transition: color 0.3s ease 0s; 
          &:hover{color:#6EC9EF;}
         }
     
@@ -124,6 +124,27 @@ h2 { color: #0366A6; font-size: 50px; margin: 20px 0 30px 0;}
 h3 {font-size: 24px; margin-bottom: 30px; margin-top: 50px; line-height: normal;}
 
 .note_success {color:#449d44; margin-top:10px;}
+
+.text_grey {color: #909090; font-size: 18px; line-height: 28px;}
+
+.cont_margin1 {margin: 0 6% 0 20%;}
+
+.cont_white {background-color: #fff; padding: 15px 50px;}
+
+#scrollup {
+position: fixed; /* фиксированная позиция */
+opacity: 0.8; /* прозрачность */
+padding: 15px 10px 10px; /* отступы */
+
+border-radius: 5px; /* скругление углов */
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+left: 10px; /* отступ слева */
+bottom: 10px; /* отступ снизу */
+display: none; /* спрятать блок */
+cursor: pointer;
+    z-index: 99;
+}
 
 
 
@@ -332,7 +353,7 @@ p{margin: 15px 0;}
 
 .blank_radiobut_top { color: #fff; background-color: #0078C3; padding: 5px 10px; margin-bottom: 20px; margin-top: 10px;}
 
-.blank_radiobut {display: table; font-size: 18px; padding: 0 20px 0 20px; border: 1px #B5B5B5 solid; min-height: 115px; width: 100%; margin: 5px 0; font-weight: 100;
+.blank_radiobut {display: table; font-size: 18px; padding: 0 20px 0 20px; border: 1px #B5B5B5 solid; height: 115px; width: 100%; margin: 5px 0; font-weight: 100;
     &:hover  {border: 5px #0078C3 solid;}
     span {display: table-cell; vertical-align: middle; }}
 
@@ -364,7 +385,7 @@ p{margin: 15px 0;}
 
 .about_testern1 { position: relative; overflow-x:hidden; overflow-y: hidden;}
 .about_testern1_img { position: absolute; top: 10px; left: -800px; right: 0; margin: 0 auto;}
-.about_testern1_text { margin: 110px 0 110px 45%;}
+.about_testern1_text { margin: 0 0 0 45%;}
 
 .about_img1 { border: 1px solid #fff; box-shadow: 0 8px 30px rgba(4,120,192,0.2); }
 
