@@ -131,19 +131,14 @@ h3 {font-size: 24px; margin-bottom: 30px; margin-top: 50px; line-height: normal;
 
 .cont_white {background-color: #fff; padding: 15px 50px;}
 
-#scrollup {
-position: fixed; /* фиксированная позиция */
-opacity: 0.8; /* прозрачность */
-padding: 15px 10px 10px; /* отступы */
-
-border-radius: 5px; /* скругление углов */
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-left: 10px; /* отступ слева */
-bottom: 10px; /* отступ снизу */
-display: none; /* спрятать блок */
-cursor: pointer;
-    z-index: 99;
+#scrollUp {
+  bottom: 10px;
+  left: 20px;
+  padding: 20px 20px;
+ background: url(img/uparrow.svg) no-repeat;
+  color: #fff;
+    opacity: 0.5;
+    &:hover {opacity: 1;}
 }
 
 

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0 0;
   padding: 0 0;
@@ -257,25 +256,15 @@ h3 {
   background-color: #fff;
   padding: 15px 50px; }
 
-#scrollup {
-  position: fixed;
-  /* ╤Д╨╕╨║╤Б╨╕╤А╨╛╨▓╨░╨╜╨╜╨░╤П ╨┐╨╛╨╖╨╕╤Ж╨╕╤П */
-  opacity: 0.8;
-  /* ╨┐╤А╨╛╨╖╤А╨░╤З╨╜╨╛╤Б╤В╤М */
-  padding: 15px 10px 10px;
-  /* ╨╛╤В╤Б╤В╤Г╨┐╤Л */
-  border-radius: 5px;
-  /* ╤Б╨║╤А╤Г╨│╨╗╨╡╨╜╨╕╨╡ ╤Г╨│╨╗╨╛╨▓ */
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  left: 10px;
-  /* ╨╛╤В╤Б╤В╤Г╨┐ ╤Б╨╗╨╡╨▓╨░ */
+#scrollUp {
   bottom: 10px;
-  /* ╨╛╤В╤Б╤В╤Г╨┐ ╤Б╨╜╨╕╨╖╤Г */
-  display: none;
-  /* ╤Б╨┐╤А╤П╤В╨░╤В╤М ╨▒╨╗╨╛╨║ */
-  cursor: pointer;
-  z-index: 99; }
+  left: 20px;
+  padding: 20px 20px;
+  background: url(img/uparrow.svg) no-repeat;
+  color: #fff;
+  opacity: 0.5; }
+  #scrollUp:hover {
+    opacity: 1; }
 
 /* trash */
 .box1 {
