@@ -510,7 +510,7 @@ p {
     margin: 0; }
 
 .cont_margin1 {
-  margin: 0 6% 0 20%; }
+  margin: 0 6% 0 12%; }
 
 .cont_white {
   background-color: #fff;
@@ -913,7 +913,10 @@ p {
     font-size: 36px; }
 
   .img_whiteback_left {
-    background-position: left -150px center; } }
+    background-position: left -150px center; }
+
+  .cont_margin1 {
+    margin: 0 6% 0 13%; } }
 @media (max-width: 992px) {
   .head {
     padding-bottom: 65px;
