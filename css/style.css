@@ -61,6 +61,15 @@ a {
     display: inline-block;
     padding: 13px 0 0 5px; }
 
+.userlog {
+  float: right;
+  font-size: 15px;
+  color: #fff;
+  padding-top: 3px;
+  margin: 0 12px; }
+  .userlog:hover {
+    color: #FFFFBF; }
+
 nav {
   position: absolute;
   top: 47px;
