@@ -244,18 +244,6 @@ h3 {
   color: #449d44;
   margin-top: 10px; }
 
-.text_grey {
-  color: #909090;
-  font-size: 18px;
-  line-height: 28px; }
-
-.cont_margin1 {
-  margin: 0 6% 0 20%; }
-
-.cont_white {
-  background-color: #fff;
-  padding: 15px 50px; }
-
 #scrollUp {
   bottom: 10px;
   left: 20px;
@@ -521,7 +509,51 @@ p {
     padding: 0;
     margin: 0; }
 
+.cont_margin1 {
+  margin: 0 6% 0 20%; }
+
+.cont_white {
+  background-color: #fff;
+  padding: 15px 50px; }
+
+.text_whiteback_mar_left {
+  margin: 0 0 0 45%; }
+
+.img_whiteback_left {
+  background-position: left -80px center;
+  background-repeat: no-repeat; }
+
 /* /in_page */
+/* page about */
+.about_testern1 {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+.about_testern1_img {
+  position: absolute;
+  top: 10px;
+  left: -800px;
+  right: 0;
+  margin: 0 auto; }
+
+.about_img1 {
+  border: 1px solid #fff;
+  box-shadow: 0 8px 30px rgba(4, 120, 192, 0.2); }
+
+.about_etsp_img {
+  position: absolute;
+  width: 35%;
+  top: 0;
+  right: -700px;
+  left: 0;
+  margin: 0 auto; }
+
+.about_etsp_text {
+  padding-bottom: 60px;
+  padding-top: 20px; }
+
+/* page /about */
 /* page index */
 .ind_block_section, .ind_block_uslugi {
   text-align: center;
@@ -757,39 +789,6 @@ p {
   margin-top: 3px; }
 
 /* /page blank order */
-/* page about */
-.about_testern1 {
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden; }
-
-.about_testern1_img {
-  position: absolute;
-  top: 10px;
-  left: -800px;
-  right: 0;
-  margin: 0 auto; }
-
-.about_testern1_text {
-  margin: 0 0 0 45%; }
-
-.about_img1 {
-  border: 1px solid #fff;
-  box-shadow: 0 8px 30px rgba(4, 120, 192, 0.2); }
-
-.about_etsp_img {
-  position: absolute;
-  width: 35%;
-  top: 0;
-  right: -700px;
-  left: 0;
-  margin: 0 auto; }
-
-.about_etsp_text {
-  padding-bottom: 60px;
-  padding-top: 20px; }
-
-/* page /about */
 /* page uslugi */
 .uslugi a {
   display: block;
@@ -906,15 +905,15 @@ p {
     left: 0;
     margin: 0 auto; }
 
-  .about_testern1_text {
-    margin: 100px 0 100px 45%; }
-
   .ind_pic_text {
     position: absolute;
     right: 4%;
     top: 60px;
     color: #0478C3;
-    font-size: 36px; } }
+    font-size: 36px; }
+
+  .img_whiteback_left {
+    background-position: left -150px center; } }
 @media (max-width: 992px) {
   .head {
     padding-bottom: 65px;
@@ -978,7 +977,16 @@ p {
     font-size: 33px; }
 
   .index_new {
-    display: none; } }
+    display: none; }
+
+  .text_whiteback_mar_left {
+    margin: 0 0 0 0; }
+
+  .img_whiteback_left {
+    background-position: left -1000px center; }
+
+  .cont_margin1 {
+    margin: 0 0 0 0; } }
 @media (max-width: 768px) {
   .head_line {
     display: block;
