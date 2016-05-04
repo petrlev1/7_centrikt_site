@@ -373,14 +373,22 @@ p{margin: 15px 0;}
     &:hover  {border: 5px #0078C3 solid;}
     span {display: table-cell; vertical-align: middle; }}
 
+.blank_num { display: none; font-size: 24px; margin: 15px 0; color: #000;
+    input{width: 100px; border-radius: 3px; border: 2px #cccccc solid; font-size: 26px; padding: 3px;}
+}
+
+.blank_num_form { font-size: 24px; color: #000;
+    input{width: 100px; border-radius: 3px; border: 2px #cccccc solid; font-size: 26px; padding: 3px;}
+}
+
 .blank_chek {display: none;}
 
 .blank_chek[type="radio"]:checked ~ .blank_radiobut { @extend .blank_radiobut; border: 5px #0078C3 solid; background: url(img/pages_images/ridiobut_act.png) 12px 15px no-repeat;  padding: 0 20px 0 90px; font-weight: bold;}
 
+.blank_chek[type="checkbox"]:checked ~ .blank_radiobut { @extend .blank_radiobut; border: 5px #0078C3 solid; background: url(img/pages_images/ridiobut_act.png) 12px 15px no-repeat;  padding: 0 20px 0 90px; font-weight: bold;}
 
-.blank_num {font-size: 24px; margin: 15px 0; color: #000;
-    input{width: 100px; border-radius: 3px; border: 2px #cccccc solid; font-size: 26px; padding: 3px;}
-}
+.blank_chek[type="checkbox"]:checked ~ .blank_num {display: block;}
+
 
 .blank_table { display: table; width: 100%;
     ul{display: table-row;}

@@ -737,7 +737,7 @@ p {
   margin-bottom: 20px;
   margin-top: 10px; }
 
-.blank_radiobut, .blank_chek[type="radio"]:checked ~ .blank_radiobut {
+.blank_radiobut, .blank_chek[type="radio"]:checked ~ .blank_radiobut, .blank_chek[type="checkbox"]:checked ~ .blank_radiobut {
   display: table;
   font-size: 18px;
   padding: 0 20px 0 20px;
@@ -746,22 +746,14 @@ p {
   width: 100%;
   margin: 5px 0;
   font-weight: 100; }
-  .blank_radiobut:hover, .blank_chek[type="radio"]:checked ~ .blank_radiobut:hover {
+  .blank_radiobut:hover, .blank_chek[type="radio"]:checked ~ .blank_radiobut:hover, .blank_chek[type="checkbox"]:checked ~ .blank_radiobut:hover {
     border: 5px #0078C3 solid; }
-  .blank_radiobut span, .blank_chek[type="radio"]:checked ~ .blank_radiobut span {
+  .blank_radiobut span, .blank_chek[type="radio"]:checked ~ .blank_radiobut span, .blank_chek[type="checkbox"]:checked ~ .blank_radiobut span {
     display: table-cell;
     vertical-align: middle; }
 
-.blank_chek {
-  display: none; }
-
-.blank_chek[type="radio"]:checked ~ .blank_radiobut {
-  border: 5px #0078C3 solid;
-  background: url(img/pages_images/ridiobut_act.png) 12px 15px no-repeat;
-  padding: 0 20px 0 90px;
-  font-weight: bold; }
-
 .blank_num {
+  display: none;
   font-size: 24px;
   margin: 15px 0;
   color: #000; }
@@ -771,6 +763,34 @@ p {
     border: 2px #cccccc solid;
     font-size: 26px;
     padding: 3px; }
+
+.blank_num_form {
+  font-size: 24px;
+  color: #000; }
+  .blank_num_form input {
+    width: 100px;
+    border-radius: 3px;
+    border: 2px #cccccc solid;
+    font-size: 26px;
+    padding: 3px; }
+
+.blank_chek {
+  display: none; }
+
+.blank_chek[type="radio"]:checked ~ .blank_radiobut, .blank_chek[type="radio"]:checked ~ .blank_chek[type="checkbox"]:checked ~ .blank_radiobut, .blank_chek[type="checkbox"]:checked ~ .blank_chek[type="radio"]:checked ~ .blank_radiobut {
+  border: 5px #0078C3 solid;
+  background: url(img/pages_images/ridiobut_act.png) 12px 15px no-repeat;
+  padding: 0 20px 0 90px;
+  font-weight: bold; }
+
+.blank_chek[type="checkbox"]:checked ~ .blank_chek[type="radio"]:checked ~ .blank_radiobut, .blank_chek[type="radio"]:checked ~ .blank_chek[type="checkbox"]:checked ~ .blank_radiobut, .blank_chek[type="checkbox"]:checked ~ .blank_radiobut {
+  border: 5px #0078C3 solid;
+  background: url(img/pages_images/ridiobut_act.png) 12px 15px no-repeat;
+  padding: 0 20px 0 90px;
+  font-weight: bold; }
+
+.blank_chek[type="checkbox"]:checked ~ .blank_num {
+  display: block; }
 
 .blank_table, .table_files {
   display: table;
