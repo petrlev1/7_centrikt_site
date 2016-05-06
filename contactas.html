@@ -113,9 +113,9 @@
 
               <h3>Общие контакты</h3>
 
-<p>+7 (499) 653-61-43</p>
+<p style="font-weight:bold;">+7 (499) 653-61-43</p>
 
-<p><a href="mailto:info@centrikt.ru">info@centrikt.ru</a></p>
+<p style="font-weight:bold;"><a href="mailto:info@centrikt.ru">info@centrikt.ru</a></p>
 
               <p>
  <strong>Для писем:</strong>
@@ -264,7 +264,34 @@
 
 
 
-        <script src="js/map.js"></script>
+        <script>
+
+            function initMap() {
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: { lat: 55.719478, lng: 37.713901 },
+                    zoom: 15,
+                    mapTypeControl: false,
+                    zoomControl: true,
+                    zoomControlOptions: {
+                        position: google.maps.ControlPosition.CENTER
+                    },
+                    scaleControl: false,
+                    streetViewControl: false,
+                    scrollwheel: false
+
+                });
+
+                var image = 'css/img/map_marker.png';
+                var beachMarker = new google.maps.Marker({
+                    position: { lat: 55.722492, lng: 37.703248 },
+                    map: map,
+                    icon: image
+                });
+
+            }
+
+        </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTZ-0J6ET0bMfXt5gsFMi9qR3cqAy8h9U&callback=initMap"
         async defer></script>
