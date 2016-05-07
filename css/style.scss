@@ -453,7 +453,7 @@ p{margin: 15px 0;}
 
 /* page contacts */
 
-$contacts_cont_heith: 1150px;
+$contacts_cont_heith: 1120px;
 
 .contacts_map {position:relative; top: 0; width: 100%; height: $contacts_cont_heith; overflow: hidden; margin: 0; padding: 0; }
 
@@ -467,6 +467,7 @@ $contacts_cont_heith: 1150px;
 .contacts_cont { position: absolute; font-size: 15px; width: 100%; height: $contacts_cont_heith; top: 0; padding: 0 20px; background-color: #F5F6F7; overflow: auto;
     h3 {padding: 0; margin: 0 0 17px 0;}
     p {margin: 10px 0; padding: 0;}
+    hr {margin: 11px 0;}
 }
 
 
