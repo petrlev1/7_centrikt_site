@@ -11,7 +11,9 @@ a{text-decoration: none; border-style: none; transition: color 0.3s ease 0s; col
 
 .head_cont { position: relative; color: #fff; font-size: 19px; padding: 10px 15px; background-color:#0078C3; }
 
-.logo {position: absolute; width: 332px; height: auto; max-width: 332px; z-index: 2;}
+.logo { position: absolute; width: 332px; height: auto; max-width: 332px; z-index: 3;
+	img{ width: 100%;}
+}
 
 .logo_small {display: block; position: absolute; left: -15px; top: -150px;
 	img{width: auto; height: 47px;}
@@ -541,10 +543,15 @@ p{margin: 15px 0;}
 	.index_new { position: absolute; top: 175px; right: 45px; text-align:right; width:49%;}
     
     nav{ width: 970px; top: 47px;
-    a {padding: 10px 14px 10px 14px; margin: 10px 0 0 0; font-size: 15px; }
+		
+		&:hover .submenu{display: none;}
+		
+    a {padding: 10px 13px 10px 13px; margin: 10px 0 0 0; font-size: 15px; }
     }
     
-    .menu_item { background-position: right 0 top 16px;}
+    .menu_item { background: none; background-position: right 0 top 16px;}
+	
+	.submenu {display: none}
     
     .about_etsp_img { width: 35%; top: 35px; right: -600px; left: 0; margin: 0 auto;}
     
@@ -566,8 +573,9 @@ p{margin: 15px 0;}
 @media (max-width: 992px) {
     
     .head {padding-bottom: 65px; height: 190px;}
-    
-    .logo{width: 250px; position: relative; }
+	
+	.logo { display: block; position: relative; width: 250px; height: auto;
+}
 	
 	.logo_small {display: none !important;}
     
@@ -592,7 +600,7 @@ nav{ text-align: center; width: 100%; top: 125px;
 	.submenu_item { 
 		&:hover {padding-bottom: 100px}
     &:hover > .submenu {
-    max-height: 2000px; }
+    max-height: 2000px;}
 }
 
     .navtree { display: none;}

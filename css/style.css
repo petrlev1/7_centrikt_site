@@ -41,7 +41,9 @@ a {
   width: 332px;
   height: auto;
   max-width: 332px;
-  z-index: 2; }
+  z-index: 3; }
+  .logo img {
+    width: 100%; }
 
 .logo_small {
   display: block;
@@ -1014,13 +1016,19 @@ p {
   nav {
     width: 970px;
     top: 47px; }
+    nav:hover .submenu {
+      display: none; }
     nav a {
-      padding: 10px 14px 10px 14px;
+      padding: 10px 13px 10px 13px;
       margin: 10px 0 0 0;
       font-size: 15px; }
 
   .menu_item {
+    background: none;
     background-position: right 0 top 16px; }
+
+  .submenu {
+    display: none; }
 
   .about_etsp_img {
     width: 35%;
@@ -1046,8 +1054,10 @@ p {
     height: 190px; }
 
   .logo {
+    display: block;
+    position: relative;
     width: 250px;
-    position: relative; }
+    height: auto; }
 
   .logo_small {
     display: none !important; }
