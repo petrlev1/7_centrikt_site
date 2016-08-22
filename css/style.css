@@ -1036,7 +1036,10 @@ p {
     margin: 0 6% 0 13%; }
 
   .block_news1 {
-    width: 23%; } }
+    width: 23%; }
+
+  .sticky {
+    position: relative; } }
 @media (max-width: 992px) {
   .head {
     padding-bottom: 65px;
@@ -1131,10 +1134,7 @@ p {
     margin-top: 200px; }
 
   .contacts_iframe_map {
-    height: 500px; }
-
-  .sticky {
-    position: relative; } }
+    height: 500px; } }
 @media (max-width: 768px) {
   .head_line {
     display: block;
