@@ -647,7 +647,6 @@ p {
   color: #000; }
 
 .ind_pic {
-  position: relative;
   width: 100%;
   height: 426px;
   background: #F5FCFF;
@@ -657,7 +656,8 @@ p {
   border-bottom: 1px #b9d6ea solid;
   overflow: hidden; }
   .ind_pic .container {
-    position: relative; }
+    position: relative;
+    height: 426px; }
 
 .ind_pic_text {
   position: absolute;
@@ -700,14 +700,40 @@ p {
   position: absolute;
   display: inline-block;
   top: -40px;
-  right: -40px; }
+  right: -30px; }
 
 .ind_pic_lupa {
   position: absolute;
   display: inline-block;
+  left: -245px;
+  bottom: -31px; }
+
+.ind_pic_contop {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  right: -170px; }
+
+.ind_pic_tistern {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  right: -20px; }
+
+.ind_pic_earth {
+  position: absolute;
+  display: inline-block;
+  width: 382px;
   left: 0;
-  top: 10px;
-  background-color: aquamarine; }
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+
+.ind_pic_obl {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: -50px; }
 
 .ind_block {
   position: relative;
@@ -1023,6 +1049,21 @@ p {
     font-size: 36px; }
 
   .ind_pic_cosm {
+    display: none; }
+
+  .ind_pic_lupa {
+    display: none; }
+
+  .ind_pic_contop {
+    display: none; }
+
+  .ind_pic_tistern {
+    display: none; }
+
+  .ind_pic_earth {
+    display: none; }
+
+  .ind_pic_obl {
     display: none; }
 
   .index_new {

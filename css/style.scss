@@ -348,10 +348,13 @@ p{margin: 15px 0;}
 
 .ind_h2 { margin-bottom: 50px; color: #000}
 
-.ind_pic { position: relative; width: 100%; height: 426px; background: #F5FCFF; background-image: url(img/ind_pic2.png), linear-gradient(to top, #ffffff, #EBF8FF); background-repeat: no-repeat; background-position: center bottom; border-bottom: 1px #b9d6ea solid; overflow: hidden;
-    .container{position: relative;}}
+.ind_pic { width: 100%; height: 426px; background: #F5FCFF; background-image: url(img/ind_pic2.png), linear-gradient(to top, #ffffff, #EBF8FF); background-repeat: no-repeat; background-position: center bottom; border-bottom: 1px #b9d6ea solid; overflow: hidden;
+    .container{position: relative; height: 426px; }}
 
 .ind_pic_text { position: absolute; right: 9%; top: 60px; color: #0478C3; font-size: 36px;}
+
+.ind_pic_text1 {}
+.ind_pic_text2 {}
 
 .index_new { position: absolute; top: 230px; right: 45px; text-align:right; width:49%;}
 
@@ -361,10 +364,17 @@ p{margin: 15px 0;}
 }
 .index_news_quotes { position: absolute; width: 30px; height: 30px; font-size: 50px; color: #3B8EC3; }
 
-.ind_pic_cosm {position: absolute; display: inline-block; top: -40px; right: -40px;}
+.ind_pic_cosm {position: absolute; display: inline-block; top: -40px; right: -30px;}
 
-.ind_pic_lupa {position: absolute; display: inline-block; left: 0; top: 10px; background-color: aquamarine}
+.ind_pic_lupa {position: absolute; display: inline-block; left: -245px; bottom: -31px;}
 
+.ind_pic_contop {position: absolute; display: inline-block; bottom: 0; right: -170px}
+
+.ind_pic_tistern {position: absolute; display: inline-block; bottom: 0; right: -20px}
+
+.ind_pic_earth {position: absolute; display: inline-block; width: 382px; left: 0; right: 0; bottom: 0; margin: auto}
+
+.ind_pic_obl {position: absolute; display: inline-block; top: 0; left: -50px }
 
 .ind_block { position: relative; margin: 10px 20px 40px 20px; min-height: 220px;
     img {width: 150px; position: relative; z-index: 1; transition: all 0.3s ease 0s;}
@@ -546,6 +556,11 @@ p{margin: 15px 0;}
 	.ind_pic_text { position: absolute; right: 4%; top: 35px; color: #0478C3; font-size: 36px;}
 	
 	.ind_pic_cosm {display: none}
+	.ind_pic_lupa {display: none}
+	.ind_pic_contop {display: none}
+	.ind_pic_tistern {display: none}
+	.ind_pic_earth {display: none}
+	.ind_pic_obl {display: none}
 	
 	.index_new { position: absolute; top: 175px; right: 45px; text-align:right; width:49%;}
     
