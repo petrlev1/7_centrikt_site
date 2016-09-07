@@ -1,0 +1,104 @@
+.banner1_cont {background-color:#f7faff }
+
+.banner_rasprodaja_oborud {display:block; position: relative; height:52px; text-align:center; color:#fff; font-size:26px; margin: 10px 0 0 0; border-radius:5px; background: linear-gradient(to bottom, #f5431b 0%,#cc3816 100%); overflow: hidden; animation: slide1 16.5s ease infinite;
+	&:hover{background: linear-gradient(to bottom, #f5431b 0%,#f5431b 100%); color: #fff}}
+
+$time1: 7s;
+
+.banner_rasprodaja_oborud_text {display: block; position: absolute; width: 500px; padding-top:5px; left: 0; right: 0; margin: auto; 
+animation: banner_rasprodaja_oborud_text $time1 ease infinite;
+}
+@keyframes banner_rasprodaja_oborud_text {
+	0% { left: -1500px } 
+     13% { left: -1500px } 
+	18% { left: 0 }
+	90% { left: 0 }
+	100% { left: 1500px }
+   }
+	
+	.banner_rasprodaja_oborud_p1 {position: absolute; width: 110px; height: 75px; top: 0; bottom: 0; left: 20px; margin: auto; 
+		animation: banner_rasprodaja_oborud_p1 $time1 ease infinite;
+}
+	@keyframes banner_rasprodaja_oborud_p1 {
+     0% { left: 1500px; } 
+    10% { left: 20px; }
+	75% { left: 20px; }
+	90% { left: -150px; }
+	100% { left: -150px; }
+   }
+	
+	.banner_rasprodaja_oborud_p2 {position: absolute; width: 108px; height: 75px; top: 0; bottom: 0; left: 150px; margin: auto;
+animation: banner_rasprodaja_oborud_p2 $time1 ease infinite;
+}
+@keyframes banner_rasprodaja_oborud_p2 {
+     2% { left: 1500px; } 
+    12% { left: 150px; }
+	84% { left: 150px; }
+	94% { left: -150px; }
+	100% { left: -150px; }
+   }
+
+	.banner_rasprodaja_oborud_p3 {position: absolute; width: 124px; height: 75px; top: 0; bottom: 9px; right: 10px; margin: auto;
+animation: banner_rasprodaja_oborud_p3 $time1 ease infinite;
+}
+@keyframes banner_rasprodaja_oborud_p3 {
+     7% { right: 1500px; } 
+    17% { right: 160px; }
+	85% { right: 160px; }
+	98% { right: -150px; }
+	100% { right: -150px; }
+   }
+
+	.banner_rasprodaja_oborud_p4 {position: absolute; width: 113px; height: 75px; top: 0; bottom: 2px; right: 30px; margin: auto;
+animation: banner_rasprodaja_oborud_p4 $time1 ease infinite;
+}
+@keyframes banner_rasprodaja_oborud_p4 {
+     5% { right: 1500px; } 
+    15% { right: 30px; }
+	82% { right: 30px; }
+	92% { right: -150px; }
+	100% { right: -150px; }
+   }
+
+.arrow_l { position: absolute; width: 23px; height: 23px; top: 3px; left: 0; right: 40%; margin: auto;
+animation: arrow_l $time1 ease infinite;}
+@keyframes arrow_l {
+	0% { left: 100%; }
+     17% { left: 100%; }
+	 17.1% { left: -5%; }
+	19% { left: 0; }
+	21% { left: -5%; }
+	23% { left: 0; }
+	25% { left: -5%; }
+	28% { left: 0; }
+	90% { left: 0; }
+	100% { left: -1500px; }
+   }
+
+.arrow_r { position: absolute; width: 23px; height: 23px; top: 3px; left: 40%; right: 0; margin: auto;
+animation: arrow_r $time1 ease infinite;}
+@keyframes arrow_r {
+	0% { left: 100%; }
+     17% { left: 100%; }
+	 17.1% { left: 40%; right: -5%; }
+	19% { right: 0; }
+	21% { right: -5%; }
+	23% { right: 0; }
+	25% { right: -5%; }
+	28% { right: 0; }
+	90% { right: 0; }
+	100% { right: -1500px; }
+   }
+
+
+
+
+@media (max-width: 1200px) {
+	.arrow_l {display:none}
+	.arrow_r { display: none}
+}
+
+
+@media (max-width: 768px) {
+	.banner1_cont {display: none}
+}
