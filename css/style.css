@@ -538,6 +538,18 @@ p {
     margin: auto;
     background-color: rgba(245, 246, 247, 0.95); }
 
+.prod_item_akcia {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  font-size: 13px;
+  line-height: 19px;
+  color: #fff;
+  background-color: #C70000;
+  padding: 0 25px;
+  z-index: 1; }
+
 .text_catalog {
   display: table;
   width: 100%;
