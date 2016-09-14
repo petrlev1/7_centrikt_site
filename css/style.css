@@ -533,17 +533,17 @@ p {
     color: #fff;
     background-color: #0366A6; }
 
-.prod_catalog_padding {
+.prod_catalog_padding, .prod_catalog_modif {
   position: relative;
   padding: 95px 20px 20px 20px;
   margin: 20px 0;
   border: 1px #c0ddf0 solid; }
-  .prod_catalog_padding:hover {
+  .prod_catalog_padding:hover, .prod_catalog_modif:hover {
     box-shadow: 0 8px 30px rgba(4, 120, 192, 0.2); }
-  .prod_catalog_padding:hover p {
+  .prod_catalog_padding:hover p, .prod_catalog_modif:hover p {
     max-height: 200px;
     transition: max-height 0.5s ease 0s; }
-  .prod_catalog_padding h3 {
+  .prod_catalog_padding h3, .prod_catalog_modif h3 {
     position: absolute;
     top: 20px;
     padding: 5px 30px;
@@ -551,7 +551,7 @@ p {
     right: 0;
     margin: auto;
     background-color: rgba(245, 246, 247, 0.95); }
-  .prod_catalog_padding p {
+  .prod_catalog_padding p, .prod_catalog_modif p {
     position: absolute;
     display: block;
     max-height: 0;
@@ -1291,7 +1291,7 @@ p {
     text-align: right;
     min-width: 0; }
 
-  .prod_catalog_padding h3 {
+  .prod_catalog_padding h3, .prod_catalog_modif h3 {
     font-size: 18px;
     margin: 0 0;
     padding: 0 10px; }

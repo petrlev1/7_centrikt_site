@@ -299,6 +299,8 @@ p{margin: 15px 0;}
     p{position: absolute; display: block; max-height: 0; overflow: hidden; padding: 0 20px; bottom: 80px; left: 0; right: 0; margin: auto; background-color: rgba(245, 246, 247, 0.95);}
 }
 
+.prod_catalog_modif { @extend .prod_catalog_padding; }
+
 .prod_item_akcia { position: absolute; display: inline-block; top: 0; right: 0; font-size: 13px; line-height: 19px; color: #fff; background-color: #C70000; padding: 0 25px;  z-index: 1}
 
 .text_catalog { display: table; width: 100%; position: relative; padding: 20px; margin: 20px 0; border: 1px #c0ddf0 solid; min-height: 130px;
