@@ -499,7 +499,21 @@ p {
 
 .products_price {
   font-size: 24px;
-  color: #4D4D4D; }
+  color: #4D4D4D;
+  line-height: 0; }
+
+.products_oldprice {
+  font-size: 24px;
+  color: #4D4D4D;
+  line-height: 0;
+  margin-top: 1px;
+  text-decoration: line-through; }
+
+.products_newprice {
+  font-size: 24px;
+  color: #C70000;
+  line-height: 0;
+  margin-top: 30px; }
 
 .products_ind h3 {
   padding: 50px 30px;
