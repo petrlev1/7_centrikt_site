@@ -284,6 +284,9 @@ p{margin: 15px 0;}
 .products_oldprice {font-size: 15px; color: #4D4D4D; line-height: 0; margin: 2px 0 0 0; text-decoration: line-through}
 .products_newprice {font-size: 16px; color: #fff; line-height: 0; margin: 21px 0 5px 0 }
 
+.products_oldprice_detail {font-size: 21px; color: #4D4D4D; line-height: 10px; text-decoration: line-through}
+.products_newprice_detail {font-size: 24px; color: #C70000; line-height: 10px}
+
 .products_ind {
     h3 {padding: 50px 30px; transition: all 0.3s ease 0s;
         &:hover {color: #fff; background-color: #0366A6;}}
