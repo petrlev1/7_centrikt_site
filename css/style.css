@@ -498,13 +498,6 @@ p {
   width: 100%;
   height: auto; }
 
-.img_products_modif {
-  margin-top: 18px; }
-  .img_products_modif img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px; }
-
 .products_price {
   font-size: 24px;
   color: #4D4D4D; }
@@ -547,14 +540,19 @@ p {
     background-color: rgba(245, 246, 247, 0.95); }
 
 .prod_catalog_modif {
-  padding: 0 20px 20px 20px; }
-  .prod_catalog_modif p {
-    font-size: 13px;
-    line-height: 20px; }
+  height: 250px;
+  padding: 0 10px 10px 10px;
+  margin: 10px 0;
+  overflow: auto; }
   .prod_catalog_modif h3 {
     position: relative;
     font-size: 20px;
-    padding: 0; }
+    top: 10px;
+    padding: 0;
+    margin: 0 0 30px 0; }
+  .prod_catalog_modif .btn, .prod_catalog_modif .btn_files {
+    position: absolute;
+    bottom: 10px; }
 
 .text_catalog {
   display: table;
