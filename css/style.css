@@ -266,6 +266,42 @@ h3 {
   #scrollUp:hover {
     opacity: 1; }
 
+.prod_item_akcia {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  font-size: 13px;
+  line-height: 19px;
+  color: #fff;
+  background-color: #C70000;
+  padding: 0 25px;
+  z-index: 1; }
+
+.products_oldprice {
+  font-size: 15px;
+  color: #4D4D4D;
+  line-height: 0;
+  margin: 2px 0 0 0;
+  text-decoration: line-through; }
+
+.products_newprice {
+  font-size: 16px;
+  color: #fff;
+  line-height: 0;
+  margin: 21px 0 5px 0; }
+
+.products_oldprice_detail {
+  font-size: 21px;
+  color: #4D4D4D;
+  line-height: 10px;
+  text-decoration: line-through; }
+
+.products_newprice_detail {
+  font-size: 24px;
+  color: #C70000;
+  line-height: 10px; }
+
 /* trash */
 .box1 {
   width: 100%;
@@ -462,6 +498,13 @@ p {
   width: 100%;
   height: auto; }
 
+.img_products_modif {
+  margin-top: 18px; }
+  .img_products_modif img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; }
+
 .products_price {
   font-size: 24px;
   color: #4D4D4D; }
@@ -473,17 +516,17 @@ p {
     color: #fff;
     background-color: #0366A6; }
 
-.prod_catalog_padding {
+.prod_catalog_padding, .prod_catalog_modif {
   position: relative;
   padding: 95px 20px 20px 20px;
   margin: 20px 0;
   border: 1px #c0ddf0 solid; }
-  .prod_catalog_padding:hover {
+  .prod_catalog_padding:hover, .prod_catalog_modif:hover {
     box-shadow: 0 8px 30px rgba(4, 120, 192, 0.2); }
-  .prod_catalog_padding:hover p {
+  .prod_catalog_padding:hover p, .prod_catalog_modif:hover p {
     max-height: 200px;
     transition: max-height 0.5s ease 0s; }
-  .prod_catalog_padding h3 {
+  .prod_catalog_padding h3, .prod_catalog_modif h3 {
     position: absolute;
     top: 20px;
     padding: 5px 30px;
@@ -491,7 +534,7 @@ p {
     right: 0;
     margin: auto;
     background-color: rgba(245, 246, 247, 0.95); }
-  .prod_catalog_padding p {
+  .prod_catalog_padding p, .prod_catalog_modif p {
     position: absolute;
     display: block;
     max-height: 0;
@@ -502,6 +545,16 @@ p {
     right: 0;
     margin: auto;
     background-color: rgba(245, 246, 247, 0.95); }
+
+.prod_catalog_modif {
+  padding: 0 20px 20px 20px; }
+  .prod_catalog_modif p {
+    font-size: 13px;
+    line-height: 20px; }
+  .prod_catalog_modif h3 {
+    position: relative;
+    font-size: 20px;
+    padding: 0; }
 
 .text_catalog {
   display: table;
@@ -1154,7 +1207,7 @@ p {
     text-align: right;
     min-width: 0; }
 
-  .prod_catalog_padding h3 {
+  .prod_catalog_padding h3, .prod_catalog_modif h3 {
     font-size: 18px;
     margin: 0 0;
     padding: 0 10px; }

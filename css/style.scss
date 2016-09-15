@@ -139,6 +139,14 @@ h3 {font-size: 24px; margin-bottom: 30px; margin-top: 50px; line-height: normal;
 }
 
 
+.prod_item_akcia { position: absolute; display: inline-block; top: 0; right: 0; font-size: 13px; line-height: 19px; color: #fff; background-color: #C70000; padding: 0 25px;  z-index: 1}
+
+.products_oldprice {font-size: 15px; color: #4D4D4D; line-height: 0; margin: 2px 0 0 0; text-decoration: line-through}
+.products_newprice {font-size: 16px; color: #fff; line-height: 0; margin: 21px 0 5px 0 }
+
+.products_oldprice_detail {font-size: 21px; color: #4D4D4D; line-height: 10px; text-decoration: line-through}
+.products_newprice_detail {font-size: 24px; color: #C70000; line-height: 10px}
+
 
 
 
@@ -248,12 +256,16 @@ h3 {font-size: 24px; margin-bottom: 30px; margin-top: 50px; line-height: normal;
 p{margin: 15px 0;}
 
 .img_products { 
-    img{width: 70%; height: auto; margin-bottom: 10px;}
-}
+img{width: 70%; height: auto; margin-bottom: 10px;}
+ }
 
-.img_products2 {
+ .img_products2 {
     img{width: 100%; height: auto;}
-}
+ }
+ 
+ .img_products_modif { margin-top: 18px;
+    img{width: 100%; height: auto; margin-bottom: 10px; }
+ }
 
 .products_price {font-size: 24px; color: #4D4D4D;}
 
@@ -268,6 +280,11 @@ p{margin: 15px 0;}
     h3 {position: absolute; top: 20px; padding: 5px 30px; left: 0; right: 0; margin: auto; background-color: rgba(245, 246, 247, 0.95);}
     p{position: absolute; display: block; max-height: 0; overflow: hidden; padding: 0 20px; bottom: 80px; left: 0; right: 0; margin: auto; background-color: rgba(245, 246, 247, 0.95);}
 }
+
+.prod_catalog_modif { @extend .prod_catalog_padding; padding: 0 20px 20px 20px;
+ p{font-size: 13px; line-height: 20px}
+ h3 {position: relative; font-size: 20px; padding: 0 }
+ }
 
 .text_catalog { display: table; width: 100%; position: relative; padding: 20px; margin: 20px 0; border: 1px #c0ddf0 solid; min-height: 130px;
     a {display: table-cell; vertical-align: middle;}
