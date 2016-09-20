@@ -543,7 +543,8 @@ p {
   height: 250px;
   padding: 0 10px 10px 10px;
   margin: 10px 0;
-  overflow: auto; }
+  overflow-x: hidden;
+  overflow-y: auto; }
   .prod_catalog_modif h3 {
     position: relative;
     font-size: 20px;
@@ -1029,7 +1030,13 @@ p {
     background-position: left -150px center; }
 
   .cont_margin1 {
-    margin: 0 6% 0 13%; } }
+    margin: 0 6% 0 13%; }
+
+  .prod_catalog_modif h3 {
+    font-size: 16px;
+    margin-top: 2px; }
+  .prod_catalog_modif .btn, .prod_catalog_modif .btn_files {
+    font-size: 16px; } }
 @media (max-width: 992px) {
   .head {
     padding-bottom: 65px;
@@ -1211,7 +1218,10 @@ p {
     padding: 0 10px; }
 
   .small_hide {
-    display: none; } }
+    display: none; }
+
+  .prod_catalog_modif h3 {
+    font-size: 16px; } }
 @media (max-width: 350px) {
   nav {
     padding: 2px 0; } }
