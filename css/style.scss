@@ -11,7 +11,10 @@ a{text-decoration: none; border-style: none; transition: color 0.3s ease 0s; col
 
 .head_cont { position: relative; color: #fff; font-size: 19px; padding: 10px 15px; background-color:#0078C3; }
 
-.logo {position: absolute; width: 332px; height: auto; max-width: 332px; z-index: 99;}
+.logo_pic {display: none}
+.logo {position: absolute; width: 332px; height: auto; max-width: 332px; z-index: 99; }
+
+.logo_html { position: relative; z-index: 99}
 
 .contacts_up { color: #fff;
     a{color:#fff; transition: color 0.3s ease 0s;
@@ -525,6 +528,9 @@ $contacts_cont_heith: 1120px;
 
 
 @media (max-width: 1200px) {
+    
+    .logo_pic {display: block}
+    .logo_html { display: none}
 
     .logo {width:  325px; left: 0;}
     

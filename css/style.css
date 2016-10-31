@@ -34,11 +34,18 @@ a {
   padding: 10px 15px;
   background-color: #0078C3; }
 
+.logo_pic {
+  display: none; }
+
 .logo {
   position: absolute;
   width: 332px;
   height: auto;
   max-width: 332px;
+  z-index: 99; }
+
+.logo_html {
+  position: relative;
   z-index: 99; }
 
 .contacts_up {
@@ -997,6 +1004,12 @@ p {
 
 /* /alcospot_egais */
 @media (max-width: 1200px) {
+  .logo_pic {
+    display: block; }
+
+  .logo_html {
+    display: none; }
+
   .logo {
     width: 325px;
     left: 0; }
