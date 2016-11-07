@@ -1,141 +1,28 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html><head>
 		<title></title>
 		<meta charset="utf-8">
-        
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <script src="js/jquery.min.js"></script>
-        
+
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <script src="js/bootstrap.min.js"></script>
 
-    <script src="js/owl.carousel.js"></script>
-
-
 <link href="css/style.css" rel="stylesheet" type="text/css">
 
-    <script type='text/javascript' src='js/jquery.scrollUp.min.js'></script>
 
-    <script>
-        $(function () {
-            $.scrollUp();
-        });
-        </script>
-        
 	</head>
 	<body>
 
 
-
-        <!-- Корзина -->
-
-<div id="modal_trash" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-        <h4 class="modal-title"></h4>
-
-      </div>
-      <div class="modal-body">
-
-        <!-- Modal content-->
-
-        <div class="box1">
-         <div class="box1_title"><li><img src="css/img/ic_trash.png" width="20" style="margin-right:10px;">Корзина</li></div>
-
-       <div class="table2">
-         <ul class="table2_title">
-             <li>Наименование</li><li>Цена</li><li>Кол-во</li><li><span style="color:#FF543F;">Удл.</span></li>
-         </ul>
-           <ul>
-            <li>Сопровождение и техническая поддержка ЕГАИС</li><li><strong>18000</strong> руб</li><li><strong>3</strong></li><li><a href="#" class="table_but_trash"></a></li>
-           </ul>
-           <ul>
-            <li>Сканер штрихкодовMotorola DS4308</li><li><strong>18000</strong> руб</li>
-            <li>
-            <!-- input-group -->
-            <div class="qtyall">
-            <form>
-            <a href="" class='qtyminus' field='quantity' /></a>
-    <input type='text' name='quantity' value='0' class="qty" />
-    <a href="" class='qtyplus' field='quantity' /></a>
-</form><!-- /input-group -->
-</div>
-            </li>
-            <li><a href="#" class="table_but_trash"></a></li>
-           </ul>
-           <ul>
-            <li>Сканер штрихкодовMotorola DS4308</li><li><strong>18000</strong> руб</li>
-            <li>
-            <!-- input-group -->
-            <div class="qtyall">
-            <form>
-            <a href="" class='qtyminus' field='quantity' /></a>
-    <input type='text' name='quantity' value='0' class="qty" />
-    <a href="" class='qtyplus' field='quantity' /></a>
-</form>
-</div>
-                <!-- /input-group -->
-            </li>
-            <li><a href="#" class="table_but_trash"></a></li>
-           </ul>
-           <ul>
-            <li>Сканер штрихкодовMotorola DS4308</li><li><strong>18000</strong> руб</li>
-            <li>
-            <!-- input-group -->
-            <div class="qtyall">
-            <form>
-            <a href="" class='qtyminus' field='quantity' /></a>
-    <input type='text' name='quantity' value='0' class="qty" />
-    <a href="" class='qtyplus' field='quantity' /></a>
-</form><!-- /input-group -->
-</div>
-            </li>
-            <li><a href="#" class="table_but_trash"></a></li>
-           </ul>
-
-       </div>
-         <div class="trash_foot">
-         <div style="margin-bottom: 12px; margin-top:5px;">В корзине <strong>6</strong> услуг/товаров на сумму <strong>11950,00</strong> руб</div>
-
-             <div class="note2 note1_suc">Уважаемый клиент! Если вы являетесь индивидуальным предпринимателем, и у вас нет расчетного счета, чтобы заказать услугу, "<strong>Оказание технической и консультационной поддержки в процессе работы ЕГАИС</strong>", вам нужно оплатить <strong><a href="https://centrikt.ru/BillContract/Quittance" target="_blank">квитанцию</a></strong>.</div>
-
-       </div>
-       </div>
-
-        <!-- /Modal content-->
-
-
-      </div>
-
-      <div class="modal-footer">
-        <a href="#" class="btn btn-success" style="float:left;">Оформить заказ</a><button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-      </div>
-    </div>
-    
-
-  </div>
-</div>
-
-<!-- /Корзина -->
-    
-
-
-    <input type="checkbox" class="adapt_but_chek" id="adapt_but_id"/>
-        <label for="adapt_but_id" class="adapt_but_label"><span class="adapt_but"></span></label>
-
-    <nav id="aside1">
-        <a href="#" class="logo_small"><img src="css/img/logo_small.png"></a>
-              <a href="#">Новости</a><span class="submenu_item">
-              <a href="uslugi.html" class="menu_item">Услуги и решения</a>
+    <nav>
+              <a href="#">Новости</a><span class="submenu_item"><a href="#" class="menu_item">Услуги и решения</a>
    <div class="submenu">
               <div class="container">
               <div class="row">
-              <div class="col-md-4">   
+              <div class="col-md-4">
 <h3>Решения</h3>
 <a href="#">Комплексы измерительные автоматизированного учета алкогольной продукции «alcospot» асииу</a>
 <a href="#">Автоматизированная система сверки деклараций</a>
@@ -145,7 +32,7 @@
 <a href="#">Система мониторинга сохранности перевозимых автотранспортом жидкостей</a>
 <a href="#">ЕГАИС - Экспресс</a>
 </div>
-<div class="col-md-4">   
+<div class="col-md-4">
 <h3>Оборудование</h3>
 <a href="#">Готовые решения для ЕГАИС от компании Дримкас</a>
 <a href="#">Оборудование для ЕГАИС от компании Атол</a>
@@ -154,7 +41,7 @@
 <a href="#">Проверка легальности ФСМ и АМу</a>
 <a href="#">Оборудование для производителей этилового спирта и алкогольной продукции</a>
 </div>
-<div class="col-md-4">   
+<div class="col-md-4">
 <h3>Услуги и сервисы</h3>
 <a href="#">Сопровождение и техническая поддержка ЕГАИС</a>
 <a href="#">Техническое обслуживание оборудования</a>
@@ -164,77 +51,67 @@
 </div>
 </div>
 </div>
-</div>           
+</div>
 </span>
-<a href="#">Центр загрузки</a>
-<a href="#">О компании</a>
-<a href="#">Контакты</a>
-    </nav>
-            
-            
-            
-    <div class="all_cont">
+<a href="#">Центр загрузки</a><a href="#">О компании</a><a href="#">Контакты</a></nav>
+
+
+
 
     <div class="head_line"><div class="head_cont">#</div></div>
     <div class="head">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-lg-4" style="text-align:left;"><a href="index.html" class="logo"><img src="css/img/logo.png"></a></div>
+          <div class="col-md-4 col-lg-4" style="text-align:left;"><a href="#"><img src="css/img/logo.png" class="logo"></a></div>
           <div class="col-md-8 col-lg-8">
             <div class="head_cont">
               <span class="contacts_up"><span style="color:#7AD9FF;">+7 (499)</span> 653-61-43 <a href="mailto:info@centrikt.ru" style="margin-left:20px;">info@centrikt.ru</a></span>
-<a href="" class="login" data-toggle="modal" data-target="#modal_trash">Выход</a>
-                <a href="" class="userlog">test999</a>
+<a href="#" class="login">Вход</a>
             </div>
-           
-          
+
+
           </div>
         </div>
       </div>
-      
+
 
     </div>
 
-  
-        <div class="in_cont uslugi">
-    <div class="container" style="margin-top:-45px">
-        <div class="row">
-                
-                <div class="col-md-4">
-                    <h3>Решения</h3>
-                    
-                                <a href="/Sections/Details/9" data-id="9">Комплексы измерительные автоматизированного учета алкогольной продукции &nbsp;«ALCOSPOT» АСИиУ </a>
-                                <a href="/Sections/Details/25" data-id="25">Автоматизированная система сверки деклараций</a>
-                                <a href="/Sections/Details/26" data-id="26">Декларант АлкоПлюс</a>
-                                <a href="/Sections/Details/27" data-id="27">Электронный журнал учета розничного оборота алкогольной продукции </a>
-                            <a href="https://egais.alcospot.ru/Account/Login?ReturnUrl=%2f" data-id="28">ПО для комплекса ЕГАИС-розница</a>
-                                <a href="/Sections/Details/30" data-id="30">Система мониторинга сохранности перевозимых автотранспортом жидкостей</a>
-                </div>
-                <div class="col-md-4">
-                    <h3>Оборудование</h3>
-                    
-                                <a href="/Products/Categories/1">Оборудование для перевозки спирта</a>
-                                <a href="/Products/Categories/3">Оборудование для ЕГАИС</a>
-                                <a href="/Products/Categories/2">Проверка легальности ФСМ и АМ</a>
-                                <a href="/Products/Categories/4">Оборудование для производителей этилового спирта и алкогольной продукции</a>
-                                <a href="/Products/Categories/9">Готовые решения для ЕГАИС от компании Дримкас</a>
-                                <a href="/Products/Categories/10">Оборудование для ЕГАИС от компании Атол</a>
-                                <a href="/Products/Categories/7">Комплектующие для ЕГАИС</a>
-                </div>
-                <div class="col-md-4">
-                    <h3>Услуги и сервисы</h3>
-                    
-                                <a href="/Sections/Details/35" data-id="35">Сопровождение и техническая поддержка ЕГАИС</a>
-                                <a href="/Sections/Details/36" data-id="36">Техническое обслуживание оборудования</a>
-                                <a href="/Sections/Details/37" data-id="37">Консультации участников алкогольного рынка</a>
-                                <a href="/Sections/Details/39" data-id="39">Выдача КЭП и JaCarta</a>
-                                <a href="https://egais.alcospot.ru/Account/Login?ReturnUrl=%2f" data-id="58">ЕГАИС-Розница</a>
-                </div>
+    <div class="in_cont uslugi">
+    <div class="container">
+              <div class="row">
+              <div class="col-md-4">
+<h3>Решения</h3>
+<a href="#">Комплексы измерительные автоматизированного учета алкогольной продукции «alcospot» асииу</a>
+<a href="#">Автоматизированная система сверки деклараций</a>
+<a href="#">Декларант АлкоПлюс</a>
+<a href="#">Электронный журнал учета розничного оборота алкогольной продукции</a>
+<a href="#">ПО для комплекса ЕГАИС-розница</a>
+<a href="#">Система мониторинга сохранности перевозимых автотранспортом жидкостей</a>
+<a href="#">ЕГАИС - Экспресс</a>
+</div>
+<div class="col-md-4">
+<h3>Оборудование</h3>
+<a href="#">Готовые решения для ЕГАИС от компании Дримкас</a>
+<a href="#">Оборудование для ЕГАИС от компании Атол</a>
+<a href="#">Комплектующие для ЕГАИС</a>
+<a href="#">Оборудование для перевозки спирта</a>
+<a href="#">Проверка легальности ФСМ и АМу</a>
+<a href="#">Оборудование для производителей этилового спирта и алкогольной продукции</a>
+</div>
+<div class="col-md-4">
+<h3>Услуги и сервисы</h3>
+<a href="#">Сопровождение и техническая поддержка ЕГАИС</a>
+<a href="#">Техническое обслуживание оборудования</a>
+<a href="#">Консультации участников алкогольного рынка</a>
+<a href="#">Выдача КЭП и JaCarta</a>
+<a href="#">ЕГАИС-Розница</a>
+</div>
+</div>
+</div>
+        </div>
 
-              
-        </div>
     </div>
-        </div>
 
 
 <div class="footer">
@@ -243,7 +120,7 @@
     <span class="contacts_foot"><span style="color:#7AD9FF;">+7 (499)</span> 653-61-43 <a href="mailto:info@centrikt.ru" style="margin-left:20px;">info@centrikt.ru</a></span>
     </div>
     </div>
-    
+
     <div class="container">
     <div class="row">
     <div class="col-md-4">
@@ -274,36 +151,22 @@
 <div class="col-md-4">
     <div class="foot_block">
     <div class="foot_block_tit">КОНТАКТЫ</div>
-    <div style="margin-bottom:8px">Адрес для писем:115280, Москва, ул.Автозаводская, 17, корп. 3 офис 11</div>
-
-<div style="margin-bottom:8px">Адрес:109316, Москва, Остаповский проезд, д. 5, стр.1, подъезд 4, офис 391</div>
-
-<div>Почта: <a href="mailto:info@centrikt.ru">info@centrikt.ru</a> <br>
+    Адрес для писем:115280, Москва, ул.Автозаводская, 17, корп. 3 офис 11
+<br>
+Адрес:109316, Москва, Остаповский проезд, д. 5, стр.1, подъезд 4, офис 391
+<br>
+Почта: <a href="mailto:info@centrikt.ru">info@centrikt.ru</a> <br>
 
 Телефон:+7 (499) 653-61-43
     </div>
-        </div>
-
 </div>
 
 </div>
 </div>
 
-<div class="container">
-    <div class="copyr">
-        <div style="margin-bottom:3px">Российский разработчик технологий и оборудования автоматизированного учета.</div>
-        <div style="margin-bottom:8px">Разработка и производство собственных программных продуктов.</div>
-       <div>© 2012 - 2016 ЦентрИКТ</div>
-    </div>
-</div>
+<div class="copyr"><div class="container">© 2012 - 2016 ЦентрИКТ</div></div>
 
 </div>
 
-        </div>
-
-        <script src="js/owl.carousel_setup.js"></script>
-
-        <script src="js/inblockfix.js"></script>
-    
 </body>
 </html>
