@@ -21,6 +21,9 @@
     <script type='text/javascript' src='js/jquery.scrollUp.min.js'></script>
     
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    
+    <link href="css/fallingsnow.css" rel="stylesheet" type="text/css">
+    
 
     <script>
         $(function () {
@@ -181,6 +184,10 @@ function handleComplete() {
 
 <!-- /Корзина -->
     
+    
+    <div id="snowflakeContainer">
+    <p class="snowflake"><img src="css/img/ny2017_flake.png" width="14" height="14" alt=""/></p>
+</div>
 
 
     <input type="checkbox" class="adapt_but_chek" id="adapt_but_id"/>
@@ -237,7 +244,9 @@ function handleComplete() {
         <div class="row">
           <div class="col-md-4 col-lg-4" style="text-align:left;">
           <div class="logo_pic"><a href="#"><img src="css/img/logo.png" class="logo"></a></div>
-          <div class="logo_html"><a href="#"><canvas id="canvas" width="332" height="111" style="display: block; background-color:rgba(255, 255, 255, 1.00)"></canvas></a></div>
+          <div class="logo_html"><a href="#"><canvas id="canvas" width="332" height="111" style="display: block;"></canvas></a>
+          <div style="position:absolute; bottom:-6px; left:15px; pointer-events: none"><img src="css/img/ny2017_snow2.png" width="103" height="22" alt=""/></div>
+          </div>
           </div>
           <div class="col-md-8 col-lg-8">
             <div class="head_cont">
@@ -531,6 +540,8 @@ function handleComplete() {
         </div>
 
         <script src="js/owl.carousel_setup.js"></script>
+        
+        <script src="js/fallingsnow_v6.js"></script>
     
 </body>
 </html>

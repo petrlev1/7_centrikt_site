@@ -5,7 +5,7 @@ a{text-decoration: none; border-style: none; transition: color 0.3s ease 0s; col
     &:active {text-decoration: none; }
 }
 
-.head { border-bottom: 1px #c0ddf0 solid; height: 120px; background-color: #fff; }
+.head { border-bottom: 1px #c0ddf0 solid; height: 120px; background: #fff url(img/ny2017_snow.jpg) repeat-x; background-position: bottom; }
 
 .head_line { position: absolute; background-color:#0078C3; top: 0; right: 0; width: 50%;}
 
@@ -14,7 +14,7 @@ a{text-decoration: none; border-style: none; transition: color 0.3s ease 0s; col
 .logo_pic {display: none}
 .logo {position: absolute; width: 332px; height: auto; max-width: 332px; z-index: 99; }
 
-.logo_html { position: relative; z-index: 99}
+.logo_html { position: relative; z-index: 99;}
 
 .contacts_up { color: #fff;
     a{color:#fff; transition: color 0.3s ease 0s;

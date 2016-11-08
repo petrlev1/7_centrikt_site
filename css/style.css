@@ -18,7 +18,8 @@ a {
 .head {
   border-bottom: 1px #c0ddf0 solid;
   height: 120px;
-  background-color: #fff; }
+  background: #fff url(img/ny2017_snow.jpg) repeat-x;
+  background-position: bottom; }
 
 .head_line {
   position: absolute;
