@@ -23,68 +23,13 @@
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
     
     <link href="css/fallingsnow.css" rel="stylesheet" type="text/css">
-    
-
-    <script>
-        $(function () {
-            $.scrollUp();
-        });
-        </script>
-        
-        <script src="js/logo.js"></script>
-
-        <script>
-var canvas, stage, exportRoot;
-function init() {
-	canvas = document.getElementById("canvas");
-	handleComplete();
-}
-function handleComplete() {
-	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-	exportRoot = new lib._102();
-	stage = new createjs.Stage(canvas);
-	stage.addChild(exportRoot);	
-	//Registers the "tick" event listener.
-	createjs.Ticker.setFPS(lib.properties.fps);
-	createjs.Ticker.addEventListener("tick", stage);	    
-	//Code to support hidpi screens and responsive scaling.
-	(function(isResp, respDim, isScale, scaleType) {		
-		var lastW, lastH, lastS=1;		
-		window.addEventListener('resize', resizeCanvas);		
-		resizeCanvas();		
-		function resizeCanvas() {			
-			var w = lib.properties.width, h = lib.properties.height;			
-			var iw = window.innerWidth, ih=window.innerHeight;			
-			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
-			if(isResp) {                
-				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
-					sRatio = lastS;                
-				}				
-				else if(!isScale) {					
-					if(iw<w || ih<h)						
-						sRatio = Math.min(xRatio, yRatio);				
-				}				
-				else if(scaleType==1) {					
-					sRatio = Math.min(xRatio, yRatio);				
-				}				
-				else if(scaleType==2) {					
-					sRatio = Math.max(xRatio, yRatio);				
-				}			
-			}			
-			canvas.width = w*pRatio*sRatio;			
-			canvas.height = h*pRatio*sRatio;
-			canvas.style.width = w*sRatio+'px';			
-			canvas.style.height = h*sRatio+'px';
-			stage.scaleX = pRatio*sRatio;			
-			stage.scaleY = pRatio*sRatio;			
-			lastW = iw; lastH = ih; lastS = sRatio;		
-		}
-	})(false,'both',false,1);	
-}
-</script>
-        
+       
+       
+       <script src="js/ny2017.js"></script>
+       <script src="js/ny2017In.js"></script>
         
 	</head>
+	
 	<body onload="init();">
 
 
@@ -244,8 +189,14 @@ function handleComplete() {
         <div class="row">
           <div class="col-md-4 col-lg-4" style="text-align:left;">
           <div class="logo_pic"><a href="#"><img src="css/img/logo.png" class="logo"></a></div>
-          <div class="logo_html"><a href="#"><canvas id="canvas" width="332" height="111" style="display: block;"></canvas></a>
-          <div style="position:absolute; bottom:-6px; left:15px; pointer-events: none"><img src="css/img/ny2017_snow2.png" width="103" height="22" alt=""/></div>
+          <div class="logo_html"><a href="#">
+		<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:337px; height:111px">
+		<canvas id="canvas" width="332" height="119" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:332px; height:119px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>	  
+         </a>
+          
           </div>
           </div>
           <div class="col-md-8 col-lg-8">
