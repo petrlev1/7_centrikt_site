@@ -314,6 +314,8 @@ img{width: 70%; height: auto; margin-bottom: 10px;}
 .about_etsp_img { position: absolute; width: 35%; top: 0; right: -700px; left: 0; margin: 0 auto;}
 .about_etsp_text { padding-bottom: 60px; padding-top: 20px;}
 
+.about_alcospot { background:url('https://centrikt.ru/Content/images//about_alcospot.png') top left no-repeat; background-size:contain; padding: 1px 0 35px 0; margin:20px 0; }
+
 /* page /about */
 
 
@@ -597,6 +599,7 @@ nav{ text-align: center; width: 100%; top: 125px;
     
     .about_etsp_img { display: none;}
     .about_etsp_text { padding-bottom: 0; padding-top: 0;}
+    .about_alcospot { background: none;}
     
     .ind_pic_text { position: absolute; right: 0; top: 60px; color: #0478C3; font-size: 33px;}
 
@@ -607,8 +610,6 @@ nav{ text-align: center; width: 100%; top: 125px;
     .img_whiteback_left { background-position: left -1000px center; }
     
     .cont_margin1 {margin: 0 0 0 0;}
-    
-    .about_alcospot {}
     
 
 }

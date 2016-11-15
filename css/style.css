@@ -625,6 +625,12 @@ p {
   padding-bottom: 60px;
   padding-top: 20px; }
 
+.about_alcospot {
+  background: url("https://centrikt.ru/Content/images//about_alcospot.png") top left no-repeat;
+  background-size: contain;
+  padding: 1px 0 35px 0;
+  margin: 20px 0; }
+
 /* page /about */
 /* page index */
 .ind_block_section, .ind_block_uslugi {
@@ -1104,6 +1110,9 @@ p {
   .about_etsp_text {
     padding-bottom: 0;
     padding-top: 0; }
+
+  .about_alcospot {
+    background: none; }
 
   .ind_pic_text {
     position: absolute;
