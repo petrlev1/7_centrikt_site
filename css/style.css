@@ -17,8 +17,10 @@ a {
 
 .head {
   border-bottom: 1px #c0ddf0 solid;
-  height: 120px;
-  background-color: #fff; }
+  height: 125px;
+  background-color: #fff;
+  background-image: url(img/5letBack.jpg);
+  background-repeat: repeat-x; }
 
 .head_line {
   position: absolute;
@@ -1263,3 +1265,5 @@ p {
   color: #fff !important;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
   -webkit-font-smoothing: antialiased; }
+
+/*# sourceMappingURL=style.css.map */
