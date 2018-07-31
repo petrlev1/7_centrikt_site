@@ -1227,8 +1227,12 @@ p {
   .ind_pic {
     display: none; }
 
-  .ind_block_oborud {
-    width: 100%; }
+  .ind_block_oborud { width: 290px; background-size: 290px; }
+    .ind_block_oborud_a { width: 290px; }
+    .ind_block_oborud p { margin-top: 160px }
+    
+     .ind_block_uslugi_links a { padding: 40px 0 40px 40px; background: none; }
+    .ind_block_uslugi_links a:hover { background: none; }
 
   .files_cell_align {
     text-align: right;
